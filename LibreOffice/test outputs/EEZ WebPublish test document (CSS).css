@@ -1,0 +1,47 @@
+/* Reset */
+#content, #content ol, #content ul { margin: 0; padding: 0; }
+#content li { list-style-position: outside; }
+
+/* Paragraphs and texts */
+#content .Center_aligned { text-align: center; color: #000000; }
+#content .Endnote { margin-left: 4,491mm; text-indent: -4,491mm; font-size: 9.0pt; color: #000000; }
+#content .Fig. { text-align: center; margin-top: 4,491mm; margin-bottom: 1,908mm; font-size: 9.0pt; font-style: italic; color: #000000; }
+#content .Footnote { margin-left: 4,491mm; text-indent: -4,491mm; font-size: 9.0pt; color: #000000; }
+#content .Heading_1 { margin-top: 3,807mm; margin-bottom: 1,908mm; font-size: 14.49pt; font-weight: bold; }
+#content .Heading_2 { margin-top: 3,807mm; margin-bottom: 1,908mm; font-size: 12.6pt; font-weight: bold; font-style: italic; }
+#content .Heading_3 { margin-top: 4,491mm; margin-bottom: 1,791mm; font-weight: bold; }
+#content .Justified_aligned { text-align: justify; color: #000000; }
+#content .List_1 { margin-left: 9mm; margin-right: 1,791mm; margin-top: 0,441mm; margin-bottom: 0,441mm; text-indent: -5,4mm; color: #000000; }
+#content .List_1_Cont. { margin-left: 9mm; margin-right: 1,791mm; margin-top: 0,441mm; margin-bottom: 0,441mm; color: #000000; }
+#content .List_1_End { margin-left: 9mm; margin-right: 1,791mm; margin-top: 0,441mm; margin-bottom: 2,7mm; text-indent: -5,4mm; color: #000000; }
+#content .List_1_Start { margin-left: 9mm; margin-right: 1,791mm; margin-top: 2,7mm; margin-bottom: 0,441mm; text-indent: -5,4mm; color: #000000; }
+#content .Numbering_1 { margin-left: 9mm; margin-right: 1,791mm; margin-top: 0,441mm; margin-bottom: 0,441mm; text-indent: -5,4mm; color: #000000; }
+#content .Numbering_1_Cont. { margin-left: 9mm; margin-right: 1,791mm; margin-top: 0,441mm; margin-bottom: 0,441mm; color: #000000; }
+#content .Numbering_1_End { margin-left: 9mm; margin-right: 1,791mm; margin-top: 0,441mm; margin-bottom: 2,7mm; text-indent: -5,4mm; color: #000000; }
+#content .Numbering_1_Start { margin-left: 9mm; margin-right: 1,791mm; margin-top: 2,7mm; margin-bottom: 0,441mm; text-indent: -5,4mm; color: #000000; }
+#content .Right_aligned { text-align: right; font-weight: bold; color: #000000; }
+#content p { text-align: left; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; border-left: 0; border-right: 0; border-top: 0; border-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; text-indent: 0; background: transparent; font-family: "Arial"; font-size: 10.8pt; font-weight: normal; font-style: normal; color: #9999cc; }
+#content li { text-align: left; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; border-left: 0; border-right: 0; border-top: 0; border-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; text-indent: 0; background: transparent; font-family: "Arial"; font-size: 10.8pt; font-weight: normal; font-style: normal; color: #9999cc; }
+#content .Table_Contents { color: #000000; }
+#content .Text_body { margin-bottom: 1,908mm; }
+#content .contentheading { font-size: 14.4pt; color: #000000; }
+#content .tab_centered { color: #000000; }
+#content .tab_left { color: #000000; }
+#content .tab_right { color: #000000; }
+#content .table_body { color: #000000; }
+#content .table_body_centered { text-align: center; color: #000000; }
+#content .table_header { text-align: center; font-weight: bold; color: #000000; }
+
+/* Footnotes & endnotes */
+#content #webpub_footnotes_divider { clear: both; margin-top: 2em; width: 25%; border-top: 1px solid black; }
+#content #webpub_footnotes { text-align: left; font-family: "Arial"; font-size: 9.0pt; }
+#content #webpub_footnotes td.label { text-align: right; vertical-align: top; }
+#content #webpub_footnotes td.content { }
+#content a.webpub_footnote { font-size: 80%; vertical-align: super; }
+#content #webpub_endnotes_divider { clear: both; margin-top: 2em; width: 25%; border-top: 3px double black; }
+#content #webpub_endnotes { text-align: left; font-family: "Arial"; font-size: 9.0pt; }
+#content #webpub_endnotes td.label { text-align: right; vertical-align: top; }
+#content #webpub_endnotes td.content { }
+#content a.webpub_endnote { font-size: 80%; vertical-align: super; }
+
+
