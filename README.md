@@ -5,7 +5,7 @@
 
 The contributors are listed in CONTRIB.TXT. This project uses the GPL v3 license, see LICENSE.TXT.
 EEZ psu-firmware uses the [C4.1 (Collective Code Construction Contract)](http://rfc.zeromq.org/spec:22) process for contributions.
-To report an issue, use the [EEZ WebPublish](https://github.com/eez-open/WebPublish/issues).
+To report an issue, use the [EEZ WebPublish](https://github.com/eez-open/WebPublish/issues) issue tracker.
 
 
 ## Introduction
@@ -17,3 +17,7 @@ Thanks to WebPublish it is possible to automate and speed up publishing procedur
  
 
 The WebPublish require installed [OpenOffice](https://www.openoffice.org/download/) or [LibreOffice](https://www.libreoffice.org/download/download/) package and [Java Runtime Environment](http://www.oracle.com/technetwork/java/javase/overview/index.html) (JRE).
+
+Reference document that include various .odt attributes can be found [here](https://github.com/eez-open/WebPublish/blob/master/doc/EEZ%20WebPublish%20test%20document.odt) and its HTML and EPUB outputs may vary between OpenOffice and LibreOffice WebPublish extension. The WebPublish for OpenOffice outputs can be found [here](https://github.com/eez-open/WebPublish/tree/master/OpenOffice/test%20outputs), and LibreOffice [here](https://github.com/eez-open/WebPublish/tree/master/LibreOffice/test%20outputs).
+
+_All web pages on [EEZ web site](https://www.envox.hr/eez/) were generated with WebPublish for Joomla CMS._
