@@ -1,0 +1,13 @@
+# FooOptionsPage strings
+0.FooOptionsPage.HelpText=
+1.FooOptionsPage.Title=
+2.FooOptionsPage.chkFoobarA.HelpText=
+3.FooOptionsPage.chkFoobarA.Label=Enable foobarA
+4.FooOptionsPage.chkFoobarB.HelpText=
+5.FooOptionsPage.chkFoobarB.Label=Enable foobarB
+6.FooOptionsPage.lblLikeMost.HelpText=
+7.FooOptionsPage.lblLikeMost.Label=What I like most:
+8.FooOptionsPage.lstLikeMost.HelpText=
+12.lstLikeMost.StringItemList=foo A
+13.lstLikeMost.StringItemList=foo B
+14.lstLikeMost.StringItemList=foo C

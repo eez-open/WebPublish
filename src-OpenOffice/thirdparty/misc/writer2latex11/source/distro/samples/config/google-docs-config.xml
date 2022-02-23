@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- gdocs.xml
+     This is a sample configuration file for Writer2LaTeX.
+     The options are set to produce the cleanest possible
+     LaTeX file from an Google Docs document.
+     The configuration is provided by Elefterios Stamatogiannakis
+ -->
+ 
+
+<config>
+  <option name="documentclass" value="article" />
+  <option name="backend" value="generic" />
+  <option name="inputencoding" value="ascii" />
+  <option name="multilingual" value="false" />
+  <option name="use_ooomath" value="false" />
+  <option name="use_color" value="false" />
+  <option name="use_colortbl" value="false" />
+  <option name="use_geometry" value="false" />
+  <option name="use_fancyhdr" value="false" />
+  <option name="use_hyperref" value="false" />
+  <option name="use_caption" value="true" />
+  <option name="use_endnotes" value="false" />
+  <option name="use_bibtex" value="true" />
+  <option name="bibtex_style" value="plain" />
+  <option name="formatting" value="ignore_most" />
+  <option name="page_formatting" value="ignore_all" />
+  <option name="ignore_empty_paragraphs" value="true" />
+  <option name="ignore_hard_page_breaks" value="true" />
+  <option name="ignore_hard_line_breaks" value="true" />
+  <option name="ignore_double_spaces" value="true" />
+  <option name="use_supertabular" value="false" />
+  <option name="simple_table_limit" value="10000" />
+  <option name="wrap_lines_after" value="0" />
+  <option name="debug" value="false" />
+  <heading-map max-level="5">
+    <heading-level-map writer-level="1" name="section" level="1" />
+    <heading-level-map writer-level="2" name="subsection" level="2" />
+    <heading-level-map writer-level="3" name="subsubsection" level="3" />
+    <heading-level-map writer-level="4" name="paragraph" level="4" />
+    <heading-level-map writer-level="5" name="subparagraph" level="5" />
+  </heading-map>
+  <custom-preamble />
+
+  <!-- Style maps: These rules defines how styles in OOo are mapped to LaTeX code.
+       A number of predefined Writer styles are converted -->
+	   
+  <!-- "Title" is mapped to \maketitle. If the user chooses to export meta data,
+       the author and date will be inserted automatically -->
+  <style-map name="Title" class="paragraph" before="\title{" after="}&#10;\maketitle" line-break="false" />
+
+  <!-- "Quotations" is mapped to a quotation environment -->
+  <style-map name="Quotations" family="paragraph-block" next="Quotations" before="\begin{quotation}" after="\end{quotation}" />
+  <style-map name="Quotations" family="paragraph" before="" after="" />
+
+  <!-- Preformatted Text is mapped to a verbatim environment
+       Note the attribute verbatim, which instructs OOo to output the content
+       verbatim (characters not available in the inputencoding will be replaced
+       by question marks; other content will be lost). -->
+  <style-map name="Preformatted Text" family="paragraph-block" next="Preformatted Text" before="\begin{verbatim}" after="\end{verbatim}" />
+  <style-map name="Preformatted Text" family="paragraph" before="" after="" verbatim="true" />
+
+  <!-- "Horizontal line" is mapped to a \hrule -->
+  <style-map name="Horizontal Line" family="paragraph" before="" after="&#10;\begin{center}\hrule\end{center}" />
+
+  <!-- "Emphasis" text style is mapped to \emph -->
+  <style-map name="Emphasis" family="text" before="\emph{" after="}" />
+  
+  <!-- Italics text style is mapped to \emph -->
+  <style-map class="text-attribute" name="italic" before="\emph{" after="}" />
+
+  <!-- Underlined text style is mapped to latex verbatim output -->
+  <style-map class="text-attribute" name="underline" before="" after="" verbatim="true"/>
+
+  <!-- Superscript text style is mapped to \textsuperscript -->
+  <style-map class="text-attribute" name="superscript" before="\textsuperscript{" after="}" />
+  
+  <!-- Subscript text style is mapped to clean latex -->
+  <style-map class="text-attribute" name="subscript" before="$_{\textrm{" after="}}$" />
+
+  <!-- "Strong Emphasis" text style is mapped to \textbf -->
+  <style-map name="Strong Emphasis" family="text" before="\textbf{" after="}"/>
+  
+  <!-- "Teletype" text style is mapped to \texttt -->
+  <style-map name="Teletype" family="text" before="\texttt{" after="}" />
+
+  <!-- "List Heading" and "List Contents" are mapped to a description environment -->
+  <style-map name="List Heading" family="paragraph-block" next="List Heading;List Contents" before="\begin{description}" after="\end{description}"/>
+  <style-map name="List Heading" family="paragraph" before="\item[" after="]" line-break="false" />
+  <style-map name="List Contents" family="paragraph" before="" after="" />
+
+  <!-- Various characters are mapped to more human friendly latex entities-->
+  <string-replace input="&#x0022;" latex-code="&quot;" />
+  <string-replace input="&#x003C;" latex-code="&lt;" />
+  <string-replace input="&#x003E;" latex-code="&gt;" />  
+  <string-replace input="&#x2018;" latex-code="`" /> 
+  <string-replace input="&#x2019;" latex-code="'" />  
+  <string-replace input="&#x201A;" latex-code="'" />  
+  <string-replace input="&#x201C;" latex-code="``" />  
+  <string-replace input="&#x201D;" latex-code="''" />  
+  <string-replace input="&#x201E;" latex-code="&quot;" /> 
+  <string-replace input="&#xF0B2;" latex-code="&quot;" />  
+  <string-replace input="&#xF022;" latex-code="''" /> 
+  <string-replace input="&#xF027;" latex-code="'" /> 
+  <string-replace input="&#xF05C;" latex-code="``" />
+  <string-replace input="&#xF060;" latex-code="'" />
+  <string-replace input="'" latex-code="'" />
+  
+  <!-- Some mappings to help with citations. -->
+ <string-replace input="<<<" latex-code="\cite{" />
+ <string-replace input=">>>" latex-code="}" />
+
+</config>
+

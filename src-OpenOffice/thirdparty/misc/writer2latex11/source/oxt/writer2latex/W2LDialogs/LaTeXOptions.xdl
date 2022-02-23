@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="LaTeXOptions" dlg:left="153" dlg:top="95" dlg:width="360" dlg:height="262" dlg:help-text="&amp;0.LaTeXOptions.HelpText" dlg:closeable="true" dlg:moveable="true" dlg:title="&amp;1.LaTeXOptions.Title">
+ <dlg:bulletinboard>
+  <dlg:fixedline dlg:id="FixedLine1" dlg:tab-index="0" dlg:left="179" dlg:top="8" dlg:width="2" dlg:height="222" dlg:help-text="&amp;2.LaTeXOptions.FixedLine1.HelpText" dlg:value="&amp;3.LaTeXOptions.FixedLine1.Label" dlg:align="vertical"/>
+  <dlg:text dlg:id="GeneralLabel" dlg:tab-index="1" dlg:left="5" dlg:top="8" dlg:width="156" dlg:height="12" dlg:help-text="&amp;4.LaTeXOptions.GeneralLabel.HelpText" dlg:value="&amp;5.LaTeXOptions.GeneralLabel.Label"/>
+  <dlg:text dlg:id="ConfigLabel" dlg:tab-index="2" dlg:left="12" dlg:top="22" dlg:width="47" dlg:height="12" dlg:help-text="&amp;6.LaTeXOptions.ConfigLabel.HelpText" dlg:value="&amp;7.LaTeXOptions.ConfigLabel.Label"/>
+  <dlg:menulist dlg:id="Config" dlg:tab-index="3" dlg:left="65" dlg:top="20" dlg:width="96" dlg:height="12" dlg:help-text="&amp;8.LaTeXOptions.Config.HelpText" dlg:spin="true" dlg:linecount="6">
+   <dlg:menupopup>
+    <dlg:menuitem dlg:value="&amp;137.Config.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;138.Config.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;139.Config.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;140.Config.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;141.Config.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;142.Config.StringItemList"/>
+   </dlg:menupopup>
+   <script:event script:event-name="on-itemstatechange" script:macro-name="vnd.sun.star.UNO:ConfigChange" script:language="UNO"/>
+  </dlg:menulist>
+  <dlg:text dlg:id="BackendLabel" dlg:tab-index="4" dlg:left="12" dlg:top="36" dlg:width="47" dlg:height="12" dlg:help-text="&amp;15.LaTeXOptions.BackendLabel.HelpText" dlg:value="&amp;16.LaTeXOptions.BackendLabel.Label"/>
+  <dlg:menulist dlg:id="Backend" dlg:tab-index="5" dlg:left="65" dlg:top="34" dlg:width="96" dlg:height="12" dlg:help-text="&amp;17.LaTeXOptions.Backend.HelpText" dlg:spin="true">
+   <dlg:menupopup>
+    <dlg:menuitem dlg:value="&amp;116.Backend.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;117.Backend.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;118.Backend.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;119.Backend.StringItemList"/>
+   </dlg:menupopup>
+  </dlg:menulist>
+  <dlg:text dlg:id="InputencodingLabel" dlg:tab-index="6" dlg:left="12" dlg:top="50" dlg:width="47" dlg:height="12" dlg:help-text="&amp;22.LaTeXOptions.InputencodingLabel.HelpText" dlg:value="&amp;23.LaTeXOptions.InputencodingLabel.Label"/>
+  <dlg:menulist dlg:id="Inputencoding" dlg:tab-index="7" dlg:left="65" dlg:top="48" dlg:width="96" dlg:height="12" dlg:help-text="&amp;24.LaTeXOptions.Inputencoding.HelpText" dlg:spin="true" dlg:linecount="8">
+   <dlg:menupopup>
+    <dlg:menuitem dlg:value="&amp;120.Inputencoding.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;121.Inputencoding.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;122.Inputencoding.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;123.Inputencoding.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;124.Inputencoding.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;125.Inputencoding.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;126.Inputencoding.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;127.Inputencoding.StringItemList"/>
+   </dlg:menupopup>
+  </dlg:menulist>
+  <dlg:checkbox dlg:id="Multilingual" dlg:tab-index="8" dlg:left="12" dlg:top="64" dlg:width="149" dlg:height="12" dlg:help-text="&amp;33.LaTeXOptions.Multilingual.HelpText" dlg:value="&amp;34.LaTeXOptions.Multilingual.Label" dlg:checked="true"/>
+  <dlg:checkbox dlg:id="GreekMath" dlg:tab-index="9" dlg:left="12" dlg:top="78" dlg:width="149" dlg:height="12" dlg:help-text="&amp;35.LaTeXOptions.GreekMath.HelpText" dlg:value="&amp;36.LaTeXOptions.GreekMath.Label" dlg:checked="true"/>
+  <dlg:checkbox dlg:id="AdditionalSymbols" dlg:tab-index="10" dlg:left="12" dlg:top="92" dlg:width="149" dlg:height="12" dlg:help-text="&amp;37.LaTeXOptions.AdditionalSymbols.HelpText" dlg:value="&amp;38.LaTeXOptions.AdditionalSymbols.Label" dlg:checked="false"/>
+  <dlg:text dlg:id="BibliographyLabel" dlg:tab-index="11" dlg:left="5" dlg:top="106" dlg:width="156" dlg:height="12" dlg:help-text="&amp;39.LaTeXOptions.BibliographyLabel.HelpText" dlg:value="&amp;40.LaTeXOptions.BibliographyLabel.Label"/>
+  <dlg:checkbox dlg:id="UseBibtex" dlg:tab-index="12" dlg:left="12" dlg:top="120" dlg:width="149" dlg:height="12" dlg:help-text="&amp;41.LaTeXOptions.UseBibtex.HelpText" dlg:value="&amp;42.LaTeXOptions.UseBibtex.Label" dlg:checked="true">
+   <script:event script:event-name="on-itemstatechange" script:macro-name="vnd.sun.star.UNO:UseBibtexChange" script:language="UNO"/>
+  </dlg:checkbox>
+  <dlg:text dlg:id="BibtexStyleLabel" dlg:tab-index="13" dlg:left="22" dlg:top="134" dlg:width="37" dlg:height="12" dlg:help-text="&amp;43.LaTeXOptions.BibtexStyleLabel.HelpText" dlg:value="&amp;44.LaTeXOptions.BibtexStyleLabel.Label"/>
+  <dlg:combobox dlg:id="BibtexStyle" dlg:tab-index="14" dlg:left="65" dlg:top="132" dlg:width="96" dlg:height="12" dlg:help-text="&amp;45.LaTeXOptions.BibtexStyle.HelpText" dlg:value="&amp;50.LaTeXOptions.BibtexStyle.Text" dlg:spin="true">
+   <dlg:menupopup>
+    <dlg:menuitem dlg:value="&amp;46.BibtexStyle.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;47.BibtexStyle.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;48.BibtexStyle.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;49.BibtexStyle.StringItemList"/>
+   </dlg:menupopup>
+  </dlg:combobox>
+  <dlg:text dlg:id="FilesLabel" dlg:tab-index="15" dlg:left="5" dlg:top="148" dlg:width="156" dlg:height="12" dlg:help-text="&amp;51.LaTeXOptions.FilesLabel.HelpText" dlg:value="&amp;52.LaTeXOptions.FilesLabel.Label"/>
+  <dlg:checkbox dlg:id="WrapLines" dlg:tab-index="16" dlg:left="12" dlg:top="162" dlg:width="139" dlg:height="12" dlg:help-text="&amp;53.LaTeXOptions.WrapLines.HelpText" dlg:value="&amp;54.LaTeXOptions.WrapLines.Label" dlg:checked="false">
+   <script:event script:event-name="on-itemstatechange" script:macro-name="vnd.sun.star.UNO:WrapLinesChange" script:language="UNO"/>
+  </dlg:checkbox>
+  <dlg:text dlg:id="WrapLinesAfterLabel" dlg:tab-index="17" dlg:left="22" dlg:top="176" dlg:width="90" dlg:height="12" dlg:help-text="&amp;55.LaTeXOptions.WrapLinesAfterLabel.HelpText" dlg:value="&amp;56.LaTeXOptions.WrapLinesAfterLabel.Label"/>
+  <dlg:numericfield dlg:id="WrapLinesAfter" dlg:tab-index="18" dlg:left="128" dlg:top="174" dlg:width="32" dlg:height="12" dlg:help-text="&amp;57.LaTeXOptions.WrapLinesAfter.HelpText" dlg:strict-format="true" dlg:decimal-accuracy="0" dlg:value="72" dlg:value-min="1" dlg:value-max="1000" dlg:spin="true" dlg:repeat="50"/>
+  <dlg:checkbox dlg:id="SplitLinkedSections" dlg:tab-index="19" dlg:left="12" dlg:top="190" dlg:width="149" dlg:height="12" dlg:help-text="&amp;58.LaTeXOptions.SplitLinkedSections.HelpText" dlg:value="&amp;59.LaTeXOptions.SplitLinkedSections.Label" dlg:checked="false"/>
+  <dlg:checkbox dlg:id="SplitToplevelSections" dlg:tab-index="20" dlg:left="12" dlg:top="204" dlg:width="160" dlg:height="12" dlg:help-text="&amp;60.LaTeXOptions.SplitToplevelSections.HelpText" dlg:value="&amp;61.LaTeXOptions.SplitToplevelSections.Label" dlg:checked="false"/>
+  <dlg:checkbox dlg:id="SaveImagesInSubdir" dlg:tab-index="21" dlg:left="12" dlg:top="218" dlg:width="149" dlg:height="12" dlg:help-text="&amp;62.LaTeXOptions.SaveImagesInSubdir.HelpText" dlg:value="&amp;63.LaTeXOptions.SaveImagesInSubdir.Label" dlg:checked="false"/>
+  <dlg:text dlg:id="SpecialContentLabel" dlg:tab-index="22" dlg:left="186" dlg:top="8" dlg:width="156" dlg:height="12" dlg:help-text="&amp;64.LaTeXOptions.SpecialContentLabel.HelpText" dlg:value="&amp;65.LaTeXOptions.SpecialContentLabel.Label"/>
+  <dlg:text dlg:id="NotesLabel" dlg:tab-index="23" dlg:left="193" dlg:top="22" dlg:width="51" dlg:height="12" dlg:help-text="&amp;66.LaTeXOptions.NotesLabel.HelpText" dlg:value="&amp;67.LaTeXOptions.NotesLabel.Label"/>
+  <dlg:menulist dlg:id="Notes" dlg:tab-index="24" dlg:left="246" dlg:top="20" dlg:width="96" dlg:height="12" dlg:help-text="&amp;68.LaTeXOptions.Notes.HelpText" dlg:spin="true" dlg:linecount="4">
+   <dlg:menupopup>
+    <dlg:menuitem dlg:value="&amp;128.Notes.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;129.Notes.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;130.Notes.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;131.Notes.StringItemList"/>
+   </dlg:menupopup>
+  </dlg:menulist>
+  <dlg:checkbox dlg:id="Metadata" dlg:tab-index="25" dlg:left="193" dlg:top="36" dlg:width="149" dlg:height="12" dlg:help-text="&amp;73.LaTeXOptions.Metadata.HelpText" dlg:value="&amp;74.LaTeXOptions.Metadata.Label" dlg:checked="true"/>
+  <dlg:text dlg:id="FiguresAndTablesLabel" dlg:tab-index="26" dlg:left="186" dlg:top="50" dlg:width="156" dlg:height="12" dlg:help-text="&amp;75.LaTeXOptions.FiguresAndTablesLabel.HelpText" dlg:value="&amp;76.LaTeXOptions.FiguresAndTablesLabel.Label"/>
+  <dlg:checkbox dlg:id="OriginalImageSize" dlg:tab-index="27" dlg:left="193" dlg:top="64" dlg:width="149" dlg:height="12" dlg:help-text="&amp;77.LaTeXOptions.OriginalImageSize.HelpText" dlg:value="&amp;78.LaTeXOptions.OriginalImageSize.Label" dlg:checked="false"/>
+  <dlg:checkbox dlg:id="OptimizeSimpleTables" dlg:tab-index="28" dlg:left="193" dlg:top="78" dlg:width="149" dlg:height="12" dlg:help-text="&amp;79.LaTeXOptions.OptimizeSimpleTables.HelpText" dlg:value="&amp;80.LaTeXOptions.OptimizeSimpleTables.Label" dlg:checked="false">
+   <script:event script:event-name="on-itemstatechange" script:macro-name="vnd.sun.star.UNO:OptimizeSimpleTablesChange" script:language="UNO"/>
+  </dlg:checkbox>
+  <dlg:text dlg:id="SimpleTableLimitLabel" dlg:tab-index="29" dlg:left="203" dlg:top="92" dlg:width="95" dlg:height="12" dlg:help-text="&amp;81.LaTeXOptions.SimpleTableLimitLabel.HelpText" dlg:value="&amp;82.LaTeXOptions.SimpleTableLimitLabel.Label"/>
+  <dlg:numericfield dlg:id="SimpleTableLimit" dlg:tab-index="30" dlg:left="310" dlg:top="90" dlg:width="32" dlg:height="12" dlg:help-text="&amp;83.LaTeXOptions.SimpleTableLimit.HelpText" dlg:decimal-accuracy="0" dlg:value="40" dlg:spin="true"/>
+  <dlg:checkbox dlg:id="FloatTables" dlg:tab-index="31" dlg:left="193" dlg:top="106" dlg:width="149" dlg:height="12" dlg:help-text="&amp;84.LaTeXOptions.FloatTables.HelpText" dlg:value="&amp;85.LaTeXOptions.FloatTables.Label" dlg:checked="true">
+   <script:event script:event-name="on-itemstatechange" script:macro-name="vnd.sun.star.UNO:FloatTablesChange" script:language="UNO"/>
+  </dlg:checkbox>
+  <dlg:checkbox dlg:id="FloatFigures" dlg:tab-index="32" dlg:left="193" dlg:top="120" dlg:width="149" dlg:height="12" dlg:help-text="&amp;86.LaTeXOptions.FloatFigures.HelpText" dlg:value="&amp;87.LaTeXOptions.FloatFigures.Label" dlg:checked="true">
+   <script:event script:event-name="on-itemstatechange" script:macro-name="vnd.sun.star.UNO:FloatFiguresChange" script:language="UNO"/>
+  </dlg:checkbox>
+  <dlg:text dlg:id="FloatOptionsLabel" dlg:tab-index="33" dlg:left="193" dlg:top="134" dlg:width="47" dlg:height="12" dlg:help-text="&amp;88.LaTeXOptions.FloatOptionsLabel.HelpText" dlg:value="&amp;89.LaTeXOptions.FloatOptionsLabel.Label"/>
+  <dlg:menulist dlg:id="FloatOptions" dlg:tab-index="34" dlg:left="246" dlg:top="132" dlg:width="96" dlg:height="12" dlg:help-text="&amp;90.LaTeXOptions.FloatOptions.HelpText" dlg:spin="true">
+   <dlg:menupopup>
+    <dlg:menuitem dlg:value="&amp;132.FloatOptions.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;133.FloatOptions.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;134.FloatOptions.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;135.FloatOptions.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;136.FloatOptions.StringItemList"/>
+   </dlg:menupopup>
+  </dlg:menulist>
+  <dlg:text dlg:id="AutoCorrectLabel" dlg:tab-index="35" dlg:left="186" dlg:top="148" dlg:width="156" dlg:height="12" dlg:help-text="&amp;96.LaTeXOptions.AutoCorrectLabel.HelpText" dlg:value="&amp;97.LaTeXOptions.AutoCorrectLabel.Label"/>
+  <dlg:checkbox dlg:id="IgnoreHardPageBreaks" dlg:tab-index="36" dlg:left="193" dlg:top="162" dlg:width="149" dlg:height="12" dlg:help-text="&amp;98.LaTeXOptions.IgnoreHardPageBreaks.HelpText" dlg:value="&amp;99.LaTeXOptions.IgnoreHardPageBreaks.Label" dlg:checked="false"/>
+  <dlg:checkbox dlg:id="IgnoreHardLineBreaks" dlg:tab-index="37" dlg:left="193" dlg:top="176" dlg:width="149" dlg:height="12" dlg:help-text="&amp;100.LaTeXOptions.IgnoreHardLineBreaks.HelpText" dlg:value="&amp;101.LaTeXOptions.IgnoreHardLineBreaks.Label" dlg:checked="false"/>
+  <dlg:checkbox dlg:id="IgnoreEmptyParagraphs" dlg:tab-index="38" dlg:left="193" dlg:top="190" dlg:width="149" dlg:height="12" dlg:help-text="&amp;102.LaTeXOptions.IgnoreEmptyParagraphs.HelpText" dlg:value="&amp;103.LaTeXOptions.IgnoreEmptyParagraphs.Label" dlg:checked="false"/>
+  <dlg:checkbox dlg:id="IgnoreDoubleSpaces" dlg:tab-index="39" dlg:left="193" dlg:top="204" dlg:width="149" dlg:height="12" dlg:help-text="&amp;104.LaTeXOptions.IgnoreDoubleSpaces.HelpText" dlg:value="&amp;105.LaTeXOptions.IgnoreDoubleSpaces.Label" dlg:checked="false"/>
+  <dlg:button dlg:id="ExportButton" dlg:tab-index="40" dlg:left="5" dlg:top="242" dlg:width="60" dlg:height="13" dlg:help-text="&amp;106.LaTeXOptions.ExportButton.HelpText" dlg:value="&amp;107.LaTeXOptions.ExportButton.Label" dlg:button-type="ok"/>
+  <dlg:button dlg:id="CancelButton" dlg:tab-index="41" dlg:left="75" dlg:top="242" dlg:width="60" dlg:height="13" dlg:help-text="&amp;108.LaTeXOptions.CancelButton.HelpText" dlg:value="&amp;109.LaTeXOptions.CancelButton.Label" dlg:button-type="cancel"/>
+ </dlg:bulletinboard>
+</dlg:window>

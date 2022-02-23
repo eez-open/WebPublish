@@ -1,0 +1,33 @@
+OptionsPageDemo extension 1.0
+===============================
+
+This NetBeans project contains a sample OpenOffice.org extension.
+The extension demonstrates how to add a custom options page within the
+existing options pages of Writer. Additionally, the extension shows how
+to integrate a custom help for an extension.
+
+
+Source structure
+-----------------
+
+* dialogs: contains the xdl dialog file for the option page. Can be edited
+           using OpenOffice.org's built-in dialog editor (see macros).
+
+* registry: contains the customized registry files for storing the configuration
+            values of this extension.
+
+* src: the Java sourcecode of the extension.
+
+* help: the xhp help files that are integrated into OOo's help system.
+
+
+Usage:
+-------
+Open the project via NetBeans (you need the OpenOffice.org plugin version 2.x or higher),
+right-click on the project and press "Deploy and run extension in OpenOffice.org".
+If you do not trust this extension, better press "Debug extension..." as this
+omitts you local user settings.
+
+
+Feel free to write to cli@openoffice.org if you have any comments
+or suggestions.

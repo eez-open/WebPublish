@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- cleanxhtml.xml
+     This is a sample configuration file for Writer2xhtml.
+     The options are set to produce a clean XHTML file using
+     standard XHTML elements, using a custom style sheet for
+     formatting. -->
+
+<config>
+  <!-- options -->
+  <option name="no_doctype" value="false" />
+  <!-- put url to your own stylesheet here: -->
+  <option name="custom_stylesheet" value="http://www.w3.org/StyleSheets/Core/Oldstyle" />
+  <option name="formatting" value="ignore_all" />
+  <option name="frame_formatting" value="ignore_all" />
+  <option name="section_formatting" value="ignore_all" />
+  <option name="table_formatting" value="ignore_all" />
+  <option name="ignore_table_dimensions" value="true" />
+  <option name="use_dublin_core" value="true" />
+  <option name="convert_to_px" value="true" />
+  <option name="scaling" value="100%" />
+  <option name="column_scaling" value="100%" />
+  <option name="split_level" value="0" />
+  <option name="calc_split" value="false" />
+  <option name="ignore_hard_line_breaks" value="true" />
+  <option name="ignore_empty_paragraphs" value="false" />
+  <option name="ignore_double_spaces" value="true" />
+
+  <!-- map OOo paragraph styles to xhtml elements -->
+  <xhtml-style-map name="Text body" family="paragraph" element="p" css="(none)" />  
+  <xhtml-style-map name="Sender" family="paragraph" element="address" css="(none)" />
+  <xhtml-style-map name="Preformatted Text" family="paragraph" element="pre" css="(none)" />
+  <xhtml-style-map name="Quotations" family="paragraph"
+block-element="blockquote" block-css="(none)" element="p" css="(none)" />
+  <xhtml-style-map name="List Heading" family="paragraph" block-element="dl" block-css="(none)" element="dt" css="(none)" />
+  <xhtml-style-map name="List Contents" family="paragraph" block-element="dl" block-css="(none)" element="dd" css="(none)" />
+  <xhtml-style-map name="Horizontal Line" family="paragraph" element="hr" css="(none)" />
+
+  <!-- map OOo text styles to xhtml elements -->
+  <xhtml-style-map name="Citation" family="text" element="cite" css="(none)" />
+  <xhtml-style-map name="Definition" family="text" element="dfn" css="(none)" />
+  <xhtml-style-map name="Emphasis" family="text" element="em" css="(none)" />
+  <xhtml-style-map name="Example" family="text" element="samp" css="(none)" />
+  <xhtml-style-map name="Source Text" family="text" element="code" css="(none)" />
+  <xhtml-style-map name="Strong Emphasis" family="text" element="strong" css="(none)" />
+  <xhtml-style-map name="Teletype" family="text" element="tt" css="(none)" />
+  <xhtml-style-map name="User entry" family="text" element="kbd" css="(none)" />
+  <xhtml-style-map name="Variable" family="text" element="var" css="(none)" />
+  
+  <!-- map OOo hard formatting attributes to xhtml elements -->
+  <xhtml-style-map name="bold" family="attribute" element="b" css="(none)" />
+  <xhtml-style-map name="italics" family="attribute" element="i" css="(none)" />
+  <xhtml-style-map name="fixed" family="attribute" element="tt" css="(none)" />
+  <xhtml-style-map name="superscript" family="attribute" element="sup" css="(none)" />
+  <xhtml-style-map name="subscript" family="attribute" element="sub" css="(none)" />
+  
+  <!-- Notes: Writer2xhtml with the above rules support a subset of xhtml elements;
+  some remarks on other elements: 
+  * The inline elements q, abbr, acronym, big and small are not supported, but
+    you can add support for those if you define your own styles in OOo and map
+    them to these elements.
+  * del, ins, object and map are not currently supported by Writer2xhtml, but
+    might be in the future
+  -->
+
+</config>
+

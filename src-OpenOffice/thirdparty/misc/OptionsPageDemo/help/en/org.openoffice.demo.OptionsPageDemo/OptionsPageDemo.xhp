@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+  <meta>
+    <topic id="textoptionsdemoxml" indexer="include" status="PUBLISH">
+      <title id="tit" xml-lang="en-US">About Options Page Demo</title>
+      <filename>/org.openoffice.demo.OptionsPageDemo/OptionsPageDemo.xhp</filename>
+    </topic>
+  </meta>
+  <body>
+  <paragraph role="heading" id="hd_id23842938423" xml-lang="en-US" level="1" l10n="NEW">
+  Options page demo help
+  </paragraph>
+
+<paragraph role="paragraph" id="hd_id535665475630" xml-lang="en-US" l10n="NEW">
+Some introducting words: this is the help page to our Option page demo extension.
+The extension shows how to add an options dialog page for an extension and
+how to integrate the page seamlessly into the OOo option pages.
+</paragraph>
+
+    <bookmark xml-lang="en-US" branch="hid/org.openoffice.demo.OptionsPageDemo:chkFoobarA" id="bm_foo02" localize="false"/>
+      <paragraph role="paragraph" id="hd_id4711" xml-lang="en-US">
+        <ahelp hid="org.openoffice.demo.OptionsPageDemo:chkFoobarA" visibility="hidden">This is the extended tool tip for chkFoobarA.</ahelp>
+      </paragraph>
+      <paragraph role="heading" id="hd_id5345993530" xml-lang="en-US" level="2" l10n="NEW">
+        chkFoobarA
+      </paragraph>
+      <paragraph role="paragraph" id="hd_id4712" xml-lang="en-US">
+      This a sample help text for the component chkFoobarA. Bla bla foo foo...
+      </paragraph>
+    <bookmark xml-lang="en-US" branch="hid/org.openoffice.demo.OptionsPageDemo:chkFoobarB" id="bm_foo03" localize="false"/>
+      <!-- This paragraph is marked as hidden and shown as tooltip //-->
+      <paragraph role="paragraph" id="hd_id4713" xml-lang="en-US">
+        <ahelp hid="org.openoffice.demo.OptionsPageDemo:chkFoobarB" visibility="hidden">This is the extended tool tip for chkFoobarB.</ahelp>
+      </paragraph>
+      <paragraph role="heading" id="hd_id534593530" xml-lang="en-US" level="2" l10n="NEW">
+        chkFoobarB
+      </paragraph>
+      <paragraph role="paragraph" id="hd_id4714" xml-lang="en-US">
+      This is also a sample help text for a component, say chkFoobarB.
+      </paragraph>
+    <bookmark xml-lang="en-US" branch="hid/org.openoffice.demo.OptionsPageDemo:lstLikeMost" id="bm_foo04" localize="false"/>
+      <paragraph role="paragraph" id="hd_id4715" xml-lang="en-US">
+        <ahelp hid="org.openoffice.demo.OptionsPageDemo:lstLikeMost" visibility="hidden">This is the extended tool tip for lstLikeMost.</ahelp>
+      </paragraph>
+      <paragraph role="heading" id="hd_id533993530" xml-lang="en-US" level="2" l10n="NEW">
+        lstLikeMost
+      </paragraph>
+      <paragraph role="paragraph" id="hd_id4716" xml-lang="en-US">
+      This is a sample help text for the list box lstLikeMost. Select the fruit
+      you like most.
+      </paragraph>
+  </body>
+</helpdocument>
+

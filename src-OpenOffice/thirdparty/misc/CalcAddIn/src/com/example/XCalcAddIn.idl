@@ -1,0 +1,25 @@
+/*
+ * XCalcAddIn.idl
+ *
+ * Created on 2011.02.24 - 11:17:37
+ *
+ */
+
+#ifndef _com_example_XCalcAddIn_
+#define _com_example_XCalcAddIn_
+
+#include <com/sun/star/lang/XLocalizable.idl>
+
+#include <com/sun/star/uno/XInterface.idl>
+
+
+module com { module example {
+    interface XCalcAddIn {
+        /// used to set an add-in locale for formatting reasons for example
+        [optional] interface ::com::sun::star::lang::XLocalizable;
+
+        long function1([in] long parameter0);
+    };
+}; };
+
+#endif

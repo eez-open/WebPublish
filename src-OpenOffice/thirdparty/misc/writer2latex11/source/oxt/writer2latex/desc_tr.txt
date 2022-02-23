@@ -1,0 +1,1 @@
+Writer2LaTeX LaTeX ve BibTeX için Writer ihraç etme filitreleri sağlar

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- pdfscreen.xml
+     This is a sample configuration file for Writer2LaTeX.
+     The output will be for pdfTeX, using all the packages pifont, ifsym,
+     wasysym, eurosym, hyperref, endnotes and ulem. 
+     The package pdfscreen.sty will be loaded to create a pdf file
+     suitable for viewing on screen. -->
+
+<config>
+  <option name="documentclass" value="article" />
+  <option name="backend" value="pdftex" />
+  <option name="inputencoding" value="ascii" />
+  <option name="use_ooomath" value="true" />
+  <option name="use_pifont" value="true" />
+  <option name="use_ifsym" value="true" />
+  <option name="use_wasysym" value="true" />
+  <option name="use_bbding" value="false" />
+  <option name="use_eurosym" value="true" />
+  <option name="use_color" value="true" />
+  <option name="use_colortbl" value="true" />
+  <option name="use_hyperref" value="true" />
+  <option name="use_endnotes" value="true" />
+  <option name="use_ulem" value="true" />
+  <option name="use_lastpage" value="true" />
+  <option name="formatting" value="convert_all" />
+  <option name="page_formatting" value="ignore_all" />
+  <option name="ignore_empty_paragraphs" value="false" />
+  <option name="ignore_hard_page_breaks" value="false" />
+  <option name="ignore_hard_line_breaks" value="false" />
+  <option name="ignore_double_spaces" value="true" />
+  <option name="debug" value="false" />
+  <heading-map max-level="5">
+    <heading-level-map writer-level="1" name="section" level="1" />
+    <heading-level-map writer-level="2" name="subsection" level="2" />
+    <heading-level-map writer-level="3" name="subsubsection" level="3" />
+    <heading-level-map writer-level="4" name="paragraph" level="4" />
+    <heading-level-map writer-level="5" name="subparagraph" level="5" />
+  </heading-map>
+
+  <!-- load pdfscreen.sty with suitable options. (Note that export of page
+       formatting is disabled above; pdfscreen.sty takes care of page setup.)
+       The lines are relatively short, so we add \sloppy to avoid overful hboxes.
+	   -->
+  <custom-preamble>\usepackage{palatino}
+\usepackage[bluelace,screen,nopanel,sectionbreak]{pdfscreen}
+%\hypersetup{pdfpagemode={FullScreen}}
+\margins{0.5in}{0.5in}{0.5in}{0.5in}
+\screensize{6in}{8in}
+\sloppy</custom-preamble>
+</config>

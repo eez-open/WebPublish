@@ -1,0 +1,1 @@
+Writer2LaTeX nabízí exportní filtry pro Writer s výstupem v LaTeXu a BibTeXu

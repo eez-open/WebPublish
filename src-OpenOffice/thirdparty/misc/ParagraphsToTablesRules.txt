@@ -1,0 +1,16 @@
+dijalog
+
+table_dijalog
+
+.table_dijalog td:first-child { white-space: nowrap; }
+.table_dijalog td { vertical-align: top; }
+.table_dijalog p { margin: 0 1em; text-indent: 0; }
+
+----------------------------------------
+
+master_sadrzaj1, master_sadrzaj2
+
+table_master_sadrzaj
+
+.table_master_sadrzaj { width: 100%; } 
+.table_master_sadrzaj td:last-child { white-space: nowrap; width: auto; }

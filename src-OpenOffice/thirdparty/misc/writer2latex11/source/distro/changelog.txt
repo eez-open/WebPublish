@@ -1,0 +1,401 @@
+Changelog for Writer2LaTeX version 0.5 -> 1.0.2
+
+---------- version 1.0.2 final --------
+
+[w2l] Bugfix: Display equations in flat XML are now again recognized correctly
+
+[all] Added Finnish translation from Samuli Selin
+
+---------- version 1.0.1 final --------
+
+[w2x] Adapted to work with MathML without namespace (fix for change in OOo 3.2)
+
+[w2l] Adapted to work with MathML without namespace (fix for change in OOo 3.2)
+
+[all] OFFICE_HOME and URE_HOME in build.xml renamed to OFFICE_CLASSES and URE_CLASSES,
+  which should now point directly to the directory containing the jars
+
+---------- version 1.0 final ----------
+
+[c2x] Optimization: Don't include more than one trailing empty row
+
+[w2l] Bugfix: Fixed problem with name clash for Polish (\lll is defined by Babel
+  as well as amsfonts)
+
+[w2l] Bugfix: The symbol U+2280 and U+2281 are now translated correctly
+
+[all] Added Dutch translation from Michael Janszen
+
+[all] Added Brazilian Portuguese translation from Henrique Pasti
+
+[all] Added Czech translation from Jindřich Marek
+
+[w2l] Bugfix: Fixed crash when using the option external_bibtex_files
+
+[w2l] Use \centering, \raggedleft and \raggedright rather than the corresponding
+  environment in floats (to avoid the extra glue)
+
+[all] Added updated Italian translation from Stefano Tombolini
+
+[all] Added Polish translation from Dariusz Bismor
+
+---------- version 1.0 beta3 ----------
+
+[all] Added Turkish translation from Ferhat Nutku
+
+[all] Added Italian translation from Stefano Tombolini
+
+[w2l] Bugfix: Removed unwanted \hfill from one-line formulas starting with text
+
+[w2x] Bugfix: Fixed another typo in description.xml
+
+---------- version 1.0 beta2 ----------
+
+[all] Bugfix: Paragraphs containing only fields are no longer lost
+
+[all] Buildfile is adapted to work with separated ure and office (OOo 3.0+)
+
+[all] Bugfix: Corrected path to descriptions in oxt
+
+[w2x] Bugfix: Corrected typo in german translation of navigation bar
+
+---------- version 1.0 beta ----------
+
+[w2x] Added german translation from Raphael Fetzer
+
+[w2x] Do not export character formatting in toc
+
+[w2l] Bugfix: Added missing hyperlink targets for frames and graphics
+
+[w2x] Bugfix: Fixed null pointer exception for text frames without height attribute
+
+[w2l] Added spanish translation from Emilio José Juárez Pérez
+
+[w2l] Added support for bitmap graphics with backend=dvips
+
+[all] No longer create source distribution (SourceForge provides tarballs generated
+  directly from SVN)
+
+[all] Added german description to filters
+
+[w2l] Bugfix: Fixed crash for tables with fewer columns than rows
+
+---------- version 0.9.4 -----------
+
+[w2l] Added sample LaTeX configuration for Google Docs from Elefterios Stamatogiannakis
+
+[w2x] Added MathML named entites table from Bruno Mascret
+
+[all] Bugfix: Locked controls are now updated correctly when the dialog is displayed
+
+[w2l] New backed xetex (initial prototype)
+
+[c2x] Bugfix: Corrected wrong calculation of column number for columns with two letters
+  (affected apply_print_ranges=true)
+
+[c2x] Bugfix: Ensure that we always export a document, even if there are no defined
+  print ranges (affected apply_print_ranges=true)
+
+[c2x] Bugfix: Now also exports uplink for spreadsheets
+
+[w2l] Bugfix: No longer incorrectly assume math mode when exporting plain text
+
+[all] Added support for the new Writer notes/annotations (which now can contain several
+  formatted paragraphs rather than a single, plain text paragraph)
+
+[all] Added russian and ukrainian translations from Volodymyr Volkov
+
+[all] Bugfix: Removed PreferredFilter propery from type definitions (makes sense
+  only for import filters)
+
+[all] Changed unix startscript: By default assume that w2l and writer2latex are
+  in the same directory (thus using dirname $0), and assume that the java executable
+  is either in the PATH or the location is defined by JAVA_HOME
+  (which these assumptions manual editing of the script is usually not required)
+
+[all] Added french translation from Jacques Lamoine
+
+[w2l] The option simple_table_limit now refers to the *total* width of the table
+  measured in characters rather than the width of individual cells
+
+[w2x] Bugfix: The position and dimensions of a frame is now calculated correctly
+  (previously the size of margins, borders and padding was not taken into account)
+
+[w2l] The inputencoding utf8 now uses the LaTeX standard rather than ucs.sty
+  (which only supports latin and cyrillic alphabets)
+
+[w2l] New style map family "text-attribute" to map text formatting to LaTeX code
+  currently only the values "bold", "italic", "small-caps", "subscript" and
+  "superscript" are supported, and the verbatim attribute is not supported
+
+---------- version 0.9.3 -----------
+
+[all] All source files are now US ASCII; added encoding of source files to build file
+
+[all] Added more File-based methods to the API
+
+[w2l] The paper sizes defined by standard LaTeX document classes are now
+  identified and added as global options (a4paper, a5paper, b5paper,
+  letterpaper, legalpaper, executivepaper, including landscape variants)
+
+[w2x] Bugfix: Now only exports the name of a text box if it actually exists!
+
+[w2l] Removed option "pagecolor" from \hypersetup (this option has been removed
+ from the hyperref package)
+
+[all] Filter bugfix: The new option name "ConfigURL" is now used in the dialogs
+
+[all] Added (partial) german localization from Martin Friedrich
+
+[w2x] New option use_named_entities: When set to true, named character entities
+  as defined in xhtml 1.0 are used (currently only those within ISO latin 1)
+
+[w2x] Characters not supported by the encoding are now exported as numeric 
+  character entities
+
+[w2x] Bugfix: Internal hyperlinks to tables, sections, frames and graphics now
+  works correctly
+
+[w2x] Bugfix: Subtables are no longer exported with an id attribute
+
+[all] Bugfix: table:number-rows-repeated is now treated correctly
+
+[c2x] New option: apply_print_ranges
+
+---------- version 0.9.2 -----------
+
+[c2x] No longer exports <tbody> for tables without <thead>
+
+[all] Renamed "class" to "family" in style maps to avoid confusion
+  with css classes (old name is still accepted)
+  
+[all] Filter: Renamed template and config options to the more
+  descriptive TemplateURL and ConfigURL
+
+[all] API: Added convenience method convert(File) to Converterer
+
+[all] API: Added convenience method write(File) to ConverterResult
+
+[all] New option: save_images_in_subdir
+
+[all] Use Robert Harders public domain Base64 decoder (replacing
+  the non-standard decoder in sun.misc)
+
+[all] MIMETypes used in the API are now defined in writer2latex.api.MIMETypes
+
+[all] Renamed the option keep_image_size to original_image_size (the meaning of
+  this option was confusing). The old name is still recognized.
+
+[all] OOo now saves SVM files with a MIME type in the package format.
+  This is now recognized by w2l, which implies that GraphicConverter
+  implementations can use SVM files from a package
+  
+[w2x] New uno service org.openoffice.da.writer2xhtml.BatchConverter
+  provides batch conversion via uno. Interaction with the user can be implemented
+  using the interface org.openoffice.da.writer2xhtml.XBatchHandler
+
+[w2x] Batch processing from the command line can now be cancelled (using the Enter key)
+
+[all] API: Created new API for batch conversion
+
+[w2l] Bugfix: Tables were in rare cases exported with invalid row alignment
+  (null character)
+
+[w2x] Filter ui bugfix: Default value for RepeatLevels changed from
+  6 to 5 (6 was not valid)
+
+[w2x] Filter: The xhtml export now uses it's own custom configuration
+  (writer2xhtml.xml, also stored in the user configuration of OOo)
+
+[w2l] Tabstops are now exported as \ \ , which usually is closer to
+  the expectations of the user (and is not ignored at the beginning of a par.)
+
+[w2x] Empty paragraphs are now (again!) exported with a &nbsp;
+  (otherwise they are ignored by the browser)
+
+[w2x] Xhtml specific options no longer starts with the prefix xhtml_
+  (is still accepted for backwards compatibility)
+
+[all] Filter: Added display name and description to the extensions
+
+[w2x] BatchConverter: Localized alternative text for icons
+
+[w2b] Bugfix: Replace ";" with "and" also in in editor field
+
+[w2x] Added new options xslt_path to give the path to the XSL
+  transformation from w3c (also in the ui)
+
+[all] Filter: Optimized the size of the extensions by excluding code not
+  relevant for the format(s) supported by the extension
+
+[all] Separated LaTeX and xhtml code. As a consequence, it is possible to build
+  and run Writer2LaTeX with support for only one format
+
+[c2x] New options display_hiddens_rows_cols and display_filtered_rows_cols. If 
+  set to false (default), rows and columns that are hidden or filtered are not
+  exported
+
+[all] Filter: Translated dialogs to Danish
+
+[all] Filter: Raised requirement in description.xml to OOo 2.2
+  (needs support for localized dialogs)
+
+[w2l] Added ui option "Support additional symbols". This sets all the
+  options use_pifont, use_ifsym, use_wasysym, use_eurosym and use_tipa.
+  The pseudo-option additional_symbols can be used in the LockedOptions list
+
+[all] Bugfix: The class w2l.xmerge.DOMDocument did not throw IOException when
+  trying to read a non-xml document
+
+[w2x] Bugfix: The convert method did not restart document enumeration
+  (relevant if it's called several times for the same converter instance)
+
+[w2x] API: Created new API for batch conversion, which is also moved
+  from Application to a separate class
+  
+[all] API: The API now uses a interface to the configuration rather than using
+  the class writer2latex.util.Config
+
+[w2x] Style of header/footer in index pages (batch conversion) aligned with
+  document header/footer
+
+[all] Added package descriptions to the javadoc
+
+[w2l] Always export non-breaking space as ~ even if inputenc  supports it
+  directly - non-breaking spaces are usually not easy to identify in text editors 
+
+---------- version 0.9.1 -----------
+
+[w2x] New option: xhtml_add_bom (default false), if set to true
+  a BOM will be added at the start of generated xhtml files
+
+[w2x] Fixed typo in filter name: XHTML 1.0 + MathML 2.0 should be
+  XHTML 1.1 + MathML 2.0
+
+[w2l] Added support for the latin language
+
+[w2l] Removed article.xml from w2l - it now belongs to Writer4LaTeX
+
+[all] The distribution now includes a sample configuration
+  package: xhtml-config-sample.oxt
+
+[all] Filter: Split the filter component into two extensions:
+  writer2latex.oxt for LaTeX and BibTeX, writer2xhtml.oxt for xhtml
+  The build file now produces optimized jars for each application, and the
+  standalone jar does not contain any uno code
+
+[w2l] Added (imcomplete) support for some of the Euclid fonts from Design Science
+
+[w2b] Replace ";" with "and" in author field (multiple authors)
+
+[w2l] Added support for formulas inserted by OOoLaTeX
+
+[w2x] Now adds mini-toc to the element with id "panel" if it exists in the xhtml
+  template
+  
+[w2l] API: Added new api for standalone StarMath converter
+  Writer2LaTeX api: writer2latex.api.StarMathConverter
+  Uno service: org.openoffice.da.writer2latex.StarMathConverter
+
+[all] Filter: Added dialogs to all filters (w2l, w2x and c2x)
+
+[w2l] Vector graphics (except wmf) is now exported as pdf if backend is pdftex
+
+[all] API: In the GraphicConverter interface, the method
+  supportsFormat has been replaced with the method supportsConversion
+
+[w2l] Added support for *numbered* display equations: If paragraph
+  contains exactly one equation and exactly one sequence field (and otherwise
+  only whitespace and brackets), it treated as a numbered equation
+
+[w2l] I18n: If several characters in a row are converted using math mode, they
+  are now combined (ie. ${\alpha}{\beta}$ rather than ${\alpha}$${\beta}$)
+
+[all] Extended FilterData to support the property AutoCreate. If set to true,
+  the configuration file will be created if it does not exist
+
+[w2l] Even if formatting=IGNORE_ALL, we should still obey character style maps
+  from the configuration
+
+[w2x] Added german translation of navigation pane (w2l.util.L10n)
+
+[all] Bugfix: A paragraph with a bibliographic reference as the only
+  content was considered empty (and the reference was lost)  
+
+[w2l] Use url decoding when creating file names for linked sections
+  (in order to obtain more readable file names)
+
+[w2l] Avoid redundant \mathit in StarMathConverter in some rare
+  cases (such as greek letters pasted into Math)
+
+[w2l] Support formulas for sequence fields (only the most common
+  cases oow:Name, oow:Name+Number, oow:Name-Number and oow:Number)
+
+[c2x] New options xhtml_display_hidden_sheets,  xhtml_use_title_as_heading and
+  xhtml_use_sheet_names_as_headings
+
+[o2x] New option xhtml_notes. If true notes (annotations) are exported to xhtml
+  comments, if false they are ignored
+
+[c2x] Convert notes (annotations)
+
+[w2l] Heading formatting: The prefix and suffix to the counter should not be
+  included in \thesection, but rather in the formatting. This means that the
+  prefix and suffix no longer will be exported if formatting=CONVERT_BASIC
+
+[w2l] Added support for chapter references to reference marks and bookmarks
+  (if the marks are contained in a heading)
+
+[w2l] New option external_bibtex_files gives a list of BibTeX files. If nonempty,
+  these files will be used instead of converting the actual bibliography marks
+
+[w2l] New option metadata. If true, export metadata as \author,
+  \date and pdf metadata, as well as pdf metadata (if use_hyperref is true)
+
+[all] Filters/API: Changed filternames to the more obvious
+  org.openoffice.da.writer2latex etc.
+
+[w2l] Updated clean.xml and ultraclean.xml. Both configurations
+  now exports predefined Writer styles (like article.xml)
+
+[w2x] New option: xhtml_repeat_levels defines the number of heading
+  levels to repeat when splitting a file (0 means no levels are repeated)
+
+[w2x] Allow xhtml templates without header and footer elements
+
+[w2x] Bugfix (w2l.office.ListCounter): OpenDocument does not use
+  numberings like 1.0.1 if a list level is missing, but rather 1.1.1
+
+[all] Command line application now uses internal standard configurations
+  (*ultraclean.xml etc.)
+  
+[all] Command line application now accepts several configuration
+  files (by using the -config option more than once)
+
+[w2x] Use text style for label when applying numbering to heading
+
+[w2x] Added support for other list styes applied to headings
+
+[w2x] Added support for text:restart-numbering, text:is-list-header on headings
+
+[w2x] No longer add hr and [] to links in navigation (the template and style
+  sheet should take care of this)
+
+[all] New filter configuration concept: Configuration packages containing an OOo
+  template, a w2l configuration and registry information to bind these together:
+  When a configuration package is installed in OOo, the configuration is added
+  to the filter ui, and is preselected for documents based on the OOo template
+
+[all] Repackaging: Distribution files are included in source, build
+  file is extended to create the distribution; source distribution is separated
+
+[all] Changed to new extension format (.oxt)
+
+[all] Filter: Added messagebox to display the error in case an
+  exception happens during conversion
+
+[all] Moved default configurations to jar; the FilterData property
+  can refer to these using the special url *filename.xml
+
+[all] The filter now reads the FilterData property, which can be
+  used to specify options, configuration fil (url) and xhtml template (url)

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="XhtmlOptions" dlg:left="139" dlg:top="84" dlg:width="203" dlg:height="306" dlg:help-text="&amp;0.XhtmlOptions.HelpText" dlg:closeable="true" dlg:moveable="true" dlg:title="&amp;1.XhtmlOptions.Title">
+ <dlg:bulletinboard>
+  <dlg:text dlg:id="StyleLabel" dlg:tab-index="0" dlg:left="5" dlg:top="8" dlg:width="183" dlg:height="12" dlg:help-text="&amp;2.XhtmlOptions.StyleLabel.HelpText" dlg:value="&amp;3.XhtmlOptions.StyleLabel.Label"/>
+  <dlg:text dlg:id="ConfigLabel" dlg:tab-index="1" dlg:left="10" dlg:top="22" dlg:width="76" dlg:height="12" dlg:help-text="&amp;4.XhtmlOptions.ConfigLabel.HelpText" dlg:value="&amp;5.XhtmlOptions.ConfigLabel.Label"/>
+  <dlg:menulist dlg:id="Config" dlg:tab-index="2" dlg:left="97" dlg:top="20" dlg:width="92" dlg:height="12" dlg:help-text="&amp;6.XhtmlOptions.Config.HelpText" dlg:spin="true" dlg:linecount="10">
+   <dlg:menupopup>
+    <dlg:menuitem dlg:value="&amp;130.Config.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;131.Config.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;132.Config.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;133.Config.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;134.Config.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;135.Config.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;136.Config.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;137.Config.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;138.Config.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;139.Config.StringItemList"/>
+   </dlg:menupopup>
+   <script:event script:event-name="on-itemstatechange" script:macro-name="vnd.sun.star.UNO:ConfigChange" script:language="UNO"/>
+  </dlg:menulist>
+  <dlg:text dlg:id="ScalingLabel" dlg:tab-index="3" dlg:left="10" dlg:top="36" dlg:width="76" dlg:height="12" dlg:help-text="&amp;17.XhtmlOptions.ScalingLabel.HelpText" dlg:value="&amp;18.XhtmlOptions.ScalingLabel.Label"/>
+  <dlg:numericfield dlg:id="Scaling" dlg:tab-index="4" dlg:left="144" dlg:top="34" dlg:width="30" dlg:height="12" dlg:help-text="&amp;19.XhtmlOptions.Scaling.HelpText" dlg:strict-format="true" dlg:decimal-accuracy="0" dlg:value="100" dlg:value-min="1" dlg:value-max="1000" dlg:value-step="10" dlg:spin="true"/>
+  <dlg:text dlg:id="ScalingPercentLabel" dlg:tab-index="5" dlg:left="179" dlg:top="36" dlg:width="10" dlg:height="12" dlg:help-text="&amp;20.XhtmlOptions.ScalingPercentLabel.HelpText" dlg:value="&amp;21.XhtmlOptions.ScalingPercentLabel.Label"/>
+  <dlg:text dlg:id="ColumnScalingLabel" dlg:tab-index="6" dlg:left="10" dlg:top="50" dlg:width="76" dlg:height="12" dlg:help-text="&amp;22.XhtmlOptions.ColumnScalingLabel.HelpText" dlg:value="&amp;23.XhtmlOptions.ColumnScalingLabel.Label"/>
+  <dlg:numericfield dlg:id="ColumnScaling" dlg:tab-index="7" dlg:left="144" dlg:top="48" dlg:width="30" dlg:height="12" dlg:help-text="&amp;24.XhtmlOptions.ColumnScaling.HelpText" dlg:strict-format="true" dlg:decimal-accuracy="0" dlg:value="100" dlg:value-min="1" dlg:value-max="1000" dlg:value-step="10" dlg:spin="true"/>
+  <dlg:text dlg:id="ColumnScalingPercentLabel" dlg:tab-index="8" dlg:left="179" dlg:top="50" dlg:width="10" dlg:height="12" dlg:help-text="&amp;25.XhtmlOptions.ColumnScalingPercentLabel.HelpText" dlg:value="&amp;26.XhtmlOptions.ColumnScalingPercentLabel.Label"/>
+  <dlg:checkbox dlg:id="ConvertToPx" dlg:tab-index="9" dlg:left="10" dlg:top="64" dlg:width="177" dlg:height="12" dlg:help-text="&amp;27.XhtmlOptions.ConvertToPx.HelpText" dlg:value="&amp;28.XhtmlOptions.ConvertToPx.Label" dlg:checked="true"/>
+  <dlg:checkbox dlg:id="OriginalImageSize" dlg:tab-index="10" dlg:left="10" dlg:top="78" dlg:width="177" dlg:height="12" dlg:help-text="&amp;29.XhtmlOptions.OriginalImageSize.HelpText" dlg:value="&amp;30.XhtmlOptions.OriginalImageSize.Label" dlg:checked="false"/>
+  <dlg:text dlg:id="SpecialContentLabel" dlg:tab-index="11" dlg:left="5" dlg:top="92" dlg:width="184" dlg:height="12" dlg:help-text="&amp;31.XhtmlOptions.SpecialContentLabel.HelpText" dlg:value="&amp;32.XhtmlOptions.SpecialContentLabel.Label"/>
+  <dlg:checkbox dlg:id="Notes" dlg:tab-index="12" dlg:left="10" dlg:top="106" dlg:width="179" dlg:height="12" dlg:help-text="&amp;33.XhtmlOptions.Notes.HelpText" dlg:value="&amp;34.XhtmlOptions.Notes.Label" dlg:checked="true"/>
+  <dlg:checkbox dlg:id="UseDublinCore" dlg:tab-index="13" dlg:left="10" dlg:top="120" dlg:width="179" dlg:height="12" dlg:help-text="&amp;35.XhtmlOptions.UseDublinCore.HelpText" dlg:value="&amp;36.XhtmlOptions.UseDublinCore.Label" dlg:checked="true"/>
+  <dlg:text dlg:id="AutoCorrectLabel" dlg:tab-index="14" dlg:left="5" dlg:top="134" dlg:width="184" dlg:height="12" dlg:help-text="&amp;37.XhtmlOptions.AutoCorrectLabel.HelpText" dlg:value="&amp;38.XhtmlOptions.AutoCorrectLabel.Label"/>
+  <dlg:checkbox dlg:id="IgnoreHardLineBreaks" dlg:tab-index="15" dlg:left="10" dlg:top="148" dlg:width="175" dlg:height="12" dlg:help-text="&amp;39.XhtmlOptions.IgnoreHardLineBreaks.HelpText" dlg:value="&amp;40.XhtmlOptions.IgnoreHardLineBreaks.Label" dlg:checked="false"/>
+  <dlg:checkbox dlg:id="IgnoreEmptyParagraphs" dlg:tab-index="16" dlg:left="10" dlg:top="162" dlg:width="175" dlg:height="12" dlg:help-text="&amp;41.XhtmlOptions.IgnoreEmptyParagraphs.HelpText" dlg:value="&amp;42.XhtmlOptions.IgnoreEmptyParagraphs.Label" dlg:checked="false"/>
+  <dlg:checkbox dlg:id="IgnoreDoubleSpaces" dlg:tab-index="17" dlg:left="10" dlg:top="176" dlg:width="175" dlg:height="12" dlg:help-text="&amp;43.XhtmlOptions.IgnoreDoubleSpaces.HelpText" dlg:value="&amp;44.XhtmlOptions.IgnoreDoubleSpaces.Label" dlg:checked="false"/>
+  <dlg:text dlg:id="FilesLabel" dlg:tab-index="18" dlg:left="5" dlg:top="190" dlg:width="184" dlg:height="12" dlg:help-text="&amp;45.XhtmlOptions.FilesLabel.HelpText" dlg:value="&amp;46.XhtmlOptions.FilesLabel.Label"/>
+  <dlg:checkbox dlg:id="Split" dlg:tab-index="19" dlg:left="10" dlg:top="204" dlg:width="180" dlg:height="12" dlg:help-text="&amp;47.XhtmlOptions.Split.HelpText" dlg:value="&amp;48.XhtmlOptions.Split.Label" dlg:checked="false">
+   <script:event script:event-name="on-itemstatechange" script:macro-name="vnd.sun.star.UNO:SplitChange" script:language="UNO"/>
+  </dlg:checkbox>
+  <dlg:text dlg:id="SplitLevelLabel" dlg:tab-index="20" dlg:left="20" dlg:top="218" dlg:width="76" dlg:height="12" dlg:help-text="&amp;49.XhtmlOptions.SplitLevelLabel.HelpText" dlg:value="&amp;50.XhtmlOptions.SplitLevelLabel.Label"/>
+  <dlg:menulist dlg:id="SplitLevel" dlg:tab-index="21" dlg:left="152" dlg:top="216" dlg:width="37" dlg:height="12" dlg:help-text="&amp;51.XhtmlOptions.SplitLevel.HelpText" dlg:spin="true" dlg:linecount="6">
+   <dlg:menupopup>
+    <dlg:menuitem dlg:value="&amp;52.SplitLevel.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;53.SplitLevel.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;54.SplitLevel.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;55.SplitLevel.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;56.SplitLevel.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;57.SplitLevel.StringItemList"/>
+   </dlg:menupopup>
+  </dlg:menulist>
+  <dlg:text dlg:id="RepeatLevelsLabel" dlg:tab-index="22" dlg:left="20" dlg:top="232" dlg:width="122" dlg:height="12" dlg:help-text="&amp;58.XhtmlOptions.RepeatLevelsLabel.HelpText" dlg:value="&amp;59.XhtmlOptions.RepeatLevelsLabel.Label"/>
+  <dlg:menulist dlg:id="RepeatLevels" dlg:tab-index="23" dlg:left="152" dlg:top="230" dlg:width="37" dlg:height="12" dlg:help-text="&amp;60.XhtmlOptions.RepeatLevels.HelpText" dlg:spin="true" dlg:linecount="6">
+   <dlg:menupopup>
+    <dlg:menuitem dlg:value="&amp;61.RepeatLevels.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;62.RepeatLevels.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;63.RepeatLevels.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;64.RepeatLevels.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;65.RepeatLevels.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;66.RepeatLevels.StringItemList"/>
+   </dlg:menupopup>
+  </dlg:menulist>
+  <dlg:checkbox dlg:id="SaveImagesInSubdir" dlg:tab-index="24" dlg:left="10" dlg:top="246" dlg:width="177" dlg:height="12" dlg:help-text="&amp;67.XhtmlOptions.SaveImagesInSubdir.HelpText" dlg:value="&amp;68.XhtmlOptions.SaveImagesInSubdir.Label" dlg:checked="false"/>
+  <dlg:text dlg:id="XsltPathLabel" dlg:tab-index="25" dlg:left="10" dlg:top="260" dlg:width="42" dlg:height="12" dlg:help-text="&amp;69.XhtmlOptions.XsltPathLabel.HelpText" dlg:value="&amp;70.XhtmlOptions.XsltPathLabel.Label"/>
+  <dlg:textfield dlg:id="XsltPath" dlg:tab-index="26" dlg:left="57" dlg:top="258" dlg:width="132" dlg:height="12" dlg:help-text="&amp;71.XhtmlOptions.XsltPath.HelpText" dlg:value="&amp;72.XhtmlOptions.XsltPath.Text"/>
+  <dlg:button dlg:id="ExportButton" dlg:tab-index="27" dlg:left="5" dlg:top="286" dlg:width="55" dlg:height="12" dlg:help-text="&amp;73.XhtmlOptions.ExportButton.HelpText" dlg:value="&amp;74.XhtmlOptions.ExportButton.Label" dlg:button-type="ok"/>
+  <dlg:button dlg:id="CancelButton" dlg:tab-index="28" dlg:left="70" dlg:top="286" dlg:width="55" dlg:height="12" dlg:help-text="&amp;75.XhtmlOptions.CancelButton.HelpText" dlg:value="&amp;76.XhtmlOptions.CancelButton.Label" dlg:button-type="cancel"/>
+ </dlg:bulletinboard>
+</dlg:window>

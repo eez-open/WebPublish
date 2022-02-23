@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-schema oor:name="Options"
+  oor:package="org.openoffice.da.Writer2xhtml"
+  xml:lang="en-US"
+  xmlns:oor="http://openoffice.org/2001/registry"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <templates>
+        <group oor:name="Configuration">
+            <prop oor:name="DisplayName" oor:type="xs:string" oor:localized="true" />
+            <prop oor:name="LockedOptions" oor:type="xs:string" />
+            <prop oor:name="ConfigURL" oor:type="xs:string" />
+            <prop oor:name="TargetTemplateURL" oor:type="xs:string" />
+        </group>
+        <group oor:name="Template">
+            <prop oor:name="TemplateName" oor:type="xs:string" />
+            <prop oor:name="ConfigName" oor:type="xs:string" />
+        </group>
+    </templates>
+    <component>
+        <group oor:name="XhtmlOptions">
+            <!-- Style -->
+            <prop oor:name="Config" oor:type="xs:short" />
+            <prop oor:name="ConfigName" oor:type="xs:string" />
+            <prop oor:name="ConvertToPx" oor:type="xs:boolean" />
+            <prop oor:name="Scaling" oor:type="xs:int" />
+            <prop oor:name="ColumnScaling" oor:type="xs:int" />
+            <prop oor:name="OriginalImageSize" oor:type="xs:boolean"/>
+            <!-- Special content -->
+            <prop oor:name="Notes" oor:type="xs:boolean" />
+            <prop oor:name="UseDublinCore" oor:type="xs:boolean" />
+            <!-- AutoCorrect -->
+            <prop oor:name="IgnoreEmptyParagraphs" oor:type="xs:boolean" />
+            <prop oor:name="IgnoreHardLineBreaks" oor:type="xs:boolean" />
+            <prop oor:name="IgnoreDoubleSpaces" oor:type="xs:boolean" />
+            <!-- Files -->
+            <prop oor:name="Split" oor:type="xs:boolean" />
+            <prop oor:name="SplitLevel" oor:type="xs:short" />
+            <prop oor:name="RepeatLevels" oor:type="xs:short" />
+            <prop oor:name="SaveImagesInSubdir" oor:type="xs:boolean" />
+            <prop oor:name="XsltPath" oor:type="xs:string" />
+            <!-- Configurations -->
+            <set oor:name="Configurations" oor:node-type="Configuration" />
+            <set oor:name="Templates" oor:node-type="Template" />			
+        </group>
+        <group oor:name="XhtmlOptionsCalc" >
+            <!-- Style -->
+            <prop oor:name="Config" oor:type="xs:short" />
+            <prop oor:name="ConfigName" oor:type="xs:string" />
+            <prop oor:name="ConvertToPx" oor:type="xs:boolean" />
+            <prop oor:name="Scaling" oor:type="xs:int" />
+            <prop oor:name="ColumnScaling" oor:type="xs:int" />
+            <prop oor:name="OriginalImageSize" oor:type="xs:boolean"/>
+            <!-- Content -->
+            <prop oor:name="Notes" oor:type="xs:boolean" />
+            <prop oor:name="UseDublinCore" oor:type="xs:boolean" />
+            <!-- Sheets -->
+            <prop oor:name="DisplayHiddenSheets" oor:type="xs:boolean" />
+            <prop oor:name="DisplayHiddenRowsCols" oor:type="xs:boolean" />
+            <prop oor:name="DisplayFilteredRowsCols" oor:type="xs:boolean" />
+            <prop oor:name="ApplyPrintRanges" oor:type="xs:boolean" />
+            <prop oor:name="UseTitleAsHeading" oor:type="xs:boolean" />
+            <prop oor:name="UseSheetNamesAsHeadings" oor:type="xs:boolean" />
+            <!-- Files -->
+            <prop oor:name="CalcSplit" oor:type="xs:boolean" />
+            <prop oor:name="SaveImagesInSubdir" oor:type="xs:boolean" />
+            <!-- Configurations -->
+            <set oor:name="Configurations" oor:node-type="Configuration" />
+            <set oor:name="Templates" oor:node-type="Template" />			
+        </group>
+    </component>
+</oor:component-schema>		

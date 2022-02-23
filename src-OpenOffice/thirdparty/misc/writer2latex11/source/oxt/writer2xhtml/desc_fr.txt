@@ -1,0 +1,1 @@
+Writer2xhtml permet d'exporter les documents Writer et Calc vers XHTML et XHTML+MathML

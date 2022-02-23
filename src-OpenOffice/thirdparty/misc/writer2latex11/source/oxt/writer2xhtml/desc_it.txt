@@ -1,0 +1,1 @@
+Writer2xhtml aggiunge a Writer e Calc filtri di esportazione in XHTML e XHTML+MathML

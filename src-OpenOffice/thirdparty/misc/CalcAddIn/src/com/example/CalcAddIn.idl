@@ -1,0 +1,17 @@
+/*
+ * CalcAddIn.idl
+ *
+ * Created on 2011.02.24 - 11:17:37
+ *
+ */
+
+#ifndef _com_example_CalcAddIn_
+#define _com_example_CalcAddIn_
+
+#include "XCalcAddIn.idl"
+
+module com { module example {
+    service CalcAddIn : XCalcAddIn;
+}; };
+
+#endif

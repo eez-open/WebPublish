@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="FooOptionsPage" dlg:left="111" dlg:top="52" dlg:width="174" dlg:height="147" dlg:help-text="&amp;0.FooOptionsPage.HelpText" dlg:help-url="org.openoffice.demo.OptionsPageDemo:textoptionsdemoxml" dlg:closeable="true" dlg:moveable="true" dlg:title="&amp;1.FooOptionsPage.Title" dlg:withtitlebar="false">
+ <dlg:bulletinboard>
+  <dlg:checkbox dlg:id="chkFoobarA" dlg:tab-index="0" dlg:left="8" dlg:top="11" dlg:width="160" dlg:height="10" dlg:help-text="&amp;2.FooOptionsPage.chkFoobarA.HelpText" dlg:help-url="org.openoffice.demo.OptionsPageDemo:chkFoobarA" dlg:value="&amp;3.FooOptionsPage.chkFoobarA.Label" dlg:checked="false"/>
+  <dlg:checkbox dlg:id="chkFoobarB" dlg:tab-index="1" dlg:left="8" dlg:top="27" dlg:width="160" dlg:height="10" dlg:help-text="&amp;4.FooOptionsPage.chkFoobarB.HelpText" dlg:help-url="org.openoffice.demo.OptionsPageDemo:chkFoobarB" dlg:value="&amp;5.FooOptionsPage.chkFoobarB.Label" dlg:checked="false"/>
+  <dlg:text dlg:id="lblLikeMost" dlg:tab-index="2" dlg:left="8" dlg:top="47" dlg:width="158" dlg:height="12" dlg:help-text="&amp;6.FooOptionsPage.lblLikeMost.HelpText" dlg:help-url="org.openoffice.demo.OptionsPageDemo:lstLikeMost" dlg:value="&amp;7.FooOptionsPage.lblLikeMost.Label"/>
+  <dlg:menulist dlg:id="lstLikeMost" dlg:tab-index="3" dlg:left="8" dlg:top="63" dlg:width="158" dlg:height="51" dlg:help-text="&amp;8.FooOptionsPage.lstLikeMost.HelpText" dlg:help-url="org.openoffice.demo.OptionsPageDemo:lstLikeMost">
+   <dlg:menupopup>
+    <dlg:menuitem dlg:value="&amp;12.lstLikeMost.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;13.lstLikeMost.StringItemList"/>
+    <dlg:menuitem dlg:value="&amp;14.lstLikeMost.StringItemList"/>
+   </dlg:menupopup>
+  </dlg:menulist>
+ </dlg:bulletinboard>
+</dlg:window>

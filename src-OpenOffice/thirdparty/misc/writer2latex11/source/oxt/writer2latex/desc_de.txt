@@ -1,0 +1,1 @@
+Writer2Latex bietet Writer Exportfilter für LaTeX und BibTeX

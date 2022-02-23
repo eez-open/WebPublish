@@ -1,0 +1,1 @@
+Writer2Latex:illa on mahdollista viedä dockumentti LaTeX:iin tai BibTeX:iin

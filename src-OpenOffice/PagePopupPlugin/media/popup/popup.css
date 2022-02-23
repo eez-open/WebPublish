@@ -1,0 +1,15 @@
+.skriveno {
+    display: none;
+}
+
+.skriveno_tekst {
+    display: none;
+}
+
+.balloon .skriveno {
+    display: block;
+}
+
+.balloon .skriveno_tekst {
+    display: inline;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="SelectProfileType" dlg:left="365" dlg:top="187" dlg:width="125" dlg:height="99" dlg:help-text="&amp;1009.SelectProfileType.HelpText" dlg:closeable="true" dlg:moveable="true" dlg:title="&amp;1010.SelectProfileType.Title">
+ <dlg:bulletinboard>
+  <dlg:text dlg:id="Label1" dlg:tab-index="6" dlg:left="7" dlg:top="7" dlg:width="57" dlg:height="10" dlg:help-text="&amp;1015.SelectProfileType.Label1.HelpText" dlg:value="&amp;1016.SelectProfileType.Label1.Label"/>
+  <dlg:radiogroup>
+   <dlg:radio dlg:id="OptionButton4" dlg:tab-index="7" dlg:left="50" dlg:top="126" dlg:width="0" dlg:height="2" dlg:help-text="&amp;1023.SelectProfileType.OptionButton4.HelpText" dlg:value="&amp;1024.SelectProfileType.OptionButton4.Label"/>
+   <dlg:radio dlg:id="rbHTML" dlg:tab-index="0" dlg:left="19" dlg:top="21" dlg:width="45" dlg:height="8" dlg:help-text="&amp;1025.SelectProfileType.rbHTML.HelpText" dlg:value="&amp;1026.SelectProfileType.rbHTML.Label"/>
+   <dlg:radio dlg:id="rbEPUB" dlg:tab-index="1" dlg:left="19" dlg:top="33" dlg:width="45" dlg:height="8" dlg:help-text="&amp;1027.SelectProfileType.rbEPUB.HelpText" dlg:value="&amp;1028.SelectProfileType.rbEPUB.Label"/>
+   <dlg:radio dlg:id="rbJoomla" dlg:tab-index="2" dlg:left="19" dlg:top="45" dlg:width="45" dlg:height="8" dlg:help-text="&amp;1031.SelectProfileType.rbJoomla.HelpText" dlg:value="&amp;1032.SelectProfileType.rbJoomla.Label"/>
+   <dlg:radio dlg:id="rbWordPress" dlg:tab-index="3" dlg:left="19" dlg:top="57" dlg:width="45" dlg:height="8" dlg:help-text="&amp;1035.SelectProfileType.rbWordPress.HelpText" dlg:value="&amp;1036.SelectProfileType.rbWordPress.Label"/>
+  </dlg:radiogroup>
+  <dlg:button dlg:id="btnOK" dlg:tab-index="4" dlg:left="11" dlg:top="74" dlg:width="50" dlg:height="14" dlg:help-text="&amp;1037.SelectProfileType.btnOK.HelpText" dlg:default="true" dlg:value="&amp;1038.SelectProfileType.btnOK.Label"/>
+  <dlg:button dlg:id="btnCancel" dlg:tab-index="5" dlg:left="64" dlg:top="74" dlg:width="50" dlg:height="14" dlg:help-text="&amp;1039.SelectProfileType.btnCancel.HelpText" dlg:value="&amp;1040.SelectProfileType.btnCancel.Label" dlg:button-type="cancel"/>
+ </dlg:bulletinboard>
+</dlg:window>

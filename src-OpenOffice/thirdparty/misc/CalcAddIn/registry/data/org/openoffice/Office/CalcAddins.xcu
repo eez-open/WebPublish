@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" oor:name="CalcAddIns" oor:package="org.openoffice.Office">
+    <node oor:name="AddInInfo">
+        <node oor:name="com.example.CalcAddIn" oor:op="replace">
+            <node oor:name="AddInFunctions">
+                <node oor:name="function1" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">function1</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value/>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add-In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value/>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="parameter0" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">parameter0</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value/>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+            </node>
+        </node>
+    </node>
+</oor:component-data>

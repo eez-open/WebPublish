@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="FontAlternatives" dlg:left="127" dlg:top="65" dlg:width="226" dlg:height="120" dlg:help-text="&amp;658.FontAlternatives.HelpText" dlg:closeable="true" dlg:moveable="true" dlg:title="&amp;659.FontAlternatives.Title">
+ <dlg:bulletinboard>
+  <dlg:button dlg:id="btnOK" dlg:tab-index="0" dlg:left="116" dlg:top="99" dlg:width="50" dlg:height="14" dlg:help-text="&amp;664.FontAlternatives.btnOK.HelpText" dlg:value="&amp;665.FontAlternatives.btnOK.Label"/>
+  <dlg:button dlg:id="btnCancel" dlg:tab-index="1" dlg:left="170" dlg:top="99" dlg:width="50" dlg:height="14" dlg:help-text="&amp;666.FontAlternatives.btnCancel.HelpText" dlg:value="&amp;667.FontAlternatives.btnCancel.Label" dlg:button-type="cancel"/>
+  <dlg:menulist dlg:id="lbFontAlternatives" dlg:tab-index="2" dlg:left="6" dlg:top="7" dlg:width="160" dlg:height="84" dlg:help-text="&amp;675.FontAlternatives.lbFontAlternatives.HelpText"/>
+  <dlg:button dlg:id="btnAdd" dlg:tab-index="3" dlg:left="170" dlg:top="7" dlg:width="50" dlg:height="14" dlg:help-text="&amp;676.FontAlternatives.btnAdd.HelpText" dlg:value="&amp;677.FontAlternatives.btnAdd.Label"/>
+  <dlg:button dlg:id="btnEdit" dlg:tab-index="4" dlg:left="170" dlg:top="25" dlg:width="50" dlg:height="14" dlg:help-text="&amp;678.FontAlternatives.btnEdit.HelpText" dlg:value="&amp;679.FontAlternatives.btnEdit.Label"/>
+  <dlg:button dlg:id="btnDelete" dlg:tab-index="5" dlg:left="170" dlg:top="43" dlg:width="50" dlg:height="14" dlg:help-text="&amp;680.FontAlternatives.btnDelete.HelpText" dlg:value="&amp;681.FontAlternatives.btnDelete.Label"/>
+ </dlg:bulletinboard>
+</dlg:window>

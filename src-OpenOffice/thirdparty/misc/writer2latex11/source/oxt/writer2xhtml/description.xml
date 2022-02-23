@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns="http://openoffice.org/extensions/description/2006"
+             xmlns:d="http://openoffice.org/extensions/description/2006"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+			 
+  <identifier value="org.openoffice.da.writer2xhtml.oxt" />
+  
+  <version value="1.0.2" />
+  
+  <dependencies>
+    <OpenOffice.org-minimal-version value="2.2" d:name="OpenOffice.org 2.2"/>
+  </dependencies>
+  
+  <display-name>
+    <name lang="da">Writer2xhtml eksportfiltre</name>
+    <name lang="en">Writer2xhtml export filters</name>
+    <name lang="de">Writer2xhtml Exportfilter</name>
+    <name lang="nl">Writer2xhtml exportfilters</name>
+    <name lang="es">Writer2xhtml filtros para exportar</name>
+    <name lang="fi">Writer2xhtml vienti suodattimet</name>
+    <name lang="fr">Filtres d'exportation Writer2xhtml</name>
+    <name lang="it">Filtri di esportazione Writer2xhtml</name>
+    <name lang="pt_BR">Filtros de exportação Writer2xhtml</name>
+    <name lang="cs">Exportní filtry Writer2xhtml</name>
+    <name lang="pl">Filtry ekportu Writer2xhtml</name>
+    <name lang="ru">Фильтры экспорта Writer2xhtml</name>
+    <name lang="uk">Фільтри експорту Writer2xhtml</name>
+    <name lang="tr">Writer2LaTeX ihraç etme filitreleri</name>
+  </display-name>
+  
+  <extension-description>
+    <src xlink:href="desc_da.txt" lang="da" />
+    <src xlink:href="desc_en.txt" lang="en" />
+    <src xlink:href="desc_de.txt" lang="de" />
+    <src xlink:href="desc_nl.txt" lang="nl" />
+    <src xlink:href="desc_es.txt" lang="es" />
+    <src xlink:href="desc_fr.txt" lang="fr" />
+    <src xlink:href="desc_it.txt" lang="it" />
+    <src xlink:href="desc_pt_BR.txt" lang="pt_BR" />
+    <src xlink:href="desc_cs.txt" lang="cs" />
+    <src xlink:href="desc_pl.txt" lang="pl" />
+    <src xlink:href="desc_ru.txt" lang="ru" />
+    <src xlink:href="desc_uk.txt" lang="uk" />
+    <src xlink:href="desc_tr.txt" lang="tr" />
+  </extension-description>
+
+</description> 

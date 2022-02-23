@@ -1,0 +1,1 @@
+Writer2LaTeX XHTML ve XHTML+MathML için Calc ihraç etme filitreleri sağlar

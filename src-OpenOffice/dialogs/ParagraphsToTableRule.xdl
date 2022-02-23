@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="ParagraphsToTableRule" dlg:left="137" dlg:top="59" dlg:width="200" dlg:height="187" dlg:help-text="&amp;206.ParagraphsToTableRule.HelpText" dlg:closeable="true" dlg:moveable="true" dlg:title="&amp;207.ParagraphsToTableRule.Title">
+ <dlg:bulletinboard>
+  <dlg:text dlg:id="lblParagraphs" dlg:tab-index="0" dlg:left="6" dlg:top="6" dlg:width="188" dlg:height="8" dlg:help-text="&amp;208.ParagraphsToTableRule.lblParagraphs.HelpText" dlg:value="&amp;209.ParagraphsToTableRule.lblParagraphs.Label"/>
+  <dlg:textfield dlg:id="txtParagraphs" dlg:tab-index="1" dlg:left="6" dlg:top="16" dlg:width="188" dlg:height="14" dlg:help-text="&amp;210.ParagraphsToTableRule.txtParagraphs.HelpText" dlg:value="&amp;211.ParagraphsToTableRule.txtParagraphs.Text"/>
+  <dlg:text dlg:id="lblTabeCSS" dlg:tab-index="6" dlg:left="6" dlg:top="62" dlg:width="188" dlg:height="8" dlg:help-text="&amp;212.ParagraphsToTableRule.lblTabeCSS.HelpText" dlg:value="&amp;213.ParagraphsToTableRule.lblTabeCSS.Label"/>
+  <dlg:textfield dlg:id="txtTableCSS" dlg:tab-index="3" dlg:left="6" dlg:top="72" dlg:width="188" dlg:height="90" dlg:help-text="&amp;214.ParagraphsToTableRule.txtTableCSS.HelpText" dlg:multiline="true" dlg:value="&amp;215.ParagraphsToTableRule.txtTableCSS.Text"/>
+  <dlg:button dlg:id="btnOK" dlg:tab-index="4" dlg:left="90" dlg:top="168" dlg:width="50" dlg:height="14" dlg:help-text="&amp;216.ParagraphsToTableRule.btnOK.HelpText" dlg:default="true" dlg:value="&amp;217.ParagraphsToTableRule.btnOK.Label"/>
+  <dlg:button dlg:id="btnCancel" dlg:tab-index="5" dlg:left="144" dlg:top="168" dlg:width="50" dlg:height="14" dlg:help-text="&amp;218.ParagraphsToTableRule.btnCancel.HelpText" dlg:value="&amp;219.ParagraphsToTableRule.btnCancel.Label" dlg:button-type="cancel"/>
+  <dlg:text dlg:id="lblTableClass" dlg:tab-index="7" dlg:left="6" dlg:top="34" dlg:width="188" dlg:height="8" dlg:help-text="&amp;220.ParagraphsToTableRule.lblTableClass.HelpText" dlg:value="&amp;221.ParagraphsToTableRule.lblTableClass.Label"/>
+  <dlg:textfield dlg:id="txtTableClass" dlg:tab-index="2" dlg:left="6" dlg:top="44" dlg:width="188" dlg:height="14" dlg:help-text="&amp;222.ParagraphsToTableRule.txtTableClass.HelpText" dlg:value="&amp;223.ParagraphsToTableRule.txtTableClass.Text"/>
+ </dlg:bulletinboard>
+</dlg:window>

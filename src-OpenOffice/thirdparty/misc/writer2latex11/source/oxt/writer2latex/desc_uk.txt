@@ -1,0 +1,1 @@
+Writer2LaTeX забезпечує Writer фільтрами експорту до LaTeX та BibTeX

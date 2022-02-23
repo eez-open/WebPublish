@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="Profile" dlg:left="216" dlg:top="14" dlg:width="260" dlg:height="255" dlg:help-text="&amp;513.Profile.HelpText" dlg:closeable="true" dlg:moveable="true" dlg:title="&amp;514.Profile.Title">
+ <dlg:bulletinboard>
+  <dlg:fixedline dlg:id="FixedLine1" dlg:tab-index="14" dlg:left="7" dlg:top="25" dlg:width="246" dlg:height="2" dlg:help-text="&amp;515.Profile.FixedLine1.HelpText" dlg:value="&amp;516.Profile.FixedLine1.Label"/>
+  <dlg:fixedline dlg:id="FixedLine2" dlg:tab-index="15" dlg:left="7" dlg:top="67" dlg:width="246" dlg:height="2" dlg:help-text="&amp;517.Profile.FixedLine2.HelpText" dlg:value="&amp;518.Profile.FixedLine2.Label"/>
+  <dlg:fixedline dlg:id="FixedLine3" dlg:tab-index="16" dlg:left="7" dlg:top="103" dlg:width="246" dlg:height="2" dlg:help-text="&amp;519.Profile.FixedLine3.HelpText" dlg:value="&amp;520.Profile.FixedLine3.Label"/>
+  <dlg:fixedline dlg:id="FixedLine4" dlg:tab-index="17" dlg:left="7" dlg:top="171" dlg:width="246" dlg:height="2" dlg:help-text="&amp;521.Profile.FixedLine4.HelpText" dlg:value="&amp;522.Profile.FixedLine4.Label"/>
+  <dlg:text dlg:id="Label1" dlg:tab-index="18" dlg:left="7" dlg:top="34" dlg:width="78" dlg:height="8" dlg:help-text="&amp;523.Profile.Label1.HelpText" dlg:value="&amp;524.Profile.Label1.Label"/>
+  <dlg:text dlg:id="Label4" dlg:tab-index="21" dlg:left="7" dlg:top="76" dlg:width="78" dlg:height="8" dlg:help-text="&amp;525.Profile.Label4.HelpText" dlg:value="&amp;526.Profile.Label4.Label"/>
+  <dlg:text dlg:id="Label5" dlg:tab-index="22" dlg:left="123" dlg:top="76" dlg:width="13" dlg:height="8" dlg:help-text="&amp;527.Profile.Label5.HelpText" dlg:value="&amp;528.Profile.Label5.Label"/>
+  <dlg:fixedline dlg:id="FixedLine6" dlg:tab-index="24" dlg:left="7" dlg:top="223" dlg:width="246" dlg:height="2" dlg:help-text="&amp;529.Profile.FixedLine6.HelpText" dlg:value="&amp;530.Profile.FixedLine6.Label"/>
+  <dlg:text dlg:id="lblProfileName" dlg:tab-index="23" dlg:left="7" dlg:top="10" dlg:width="78" dlg:height="8" dlg:help-text="&amp;531.Profile.lblProfileName.HelpText" dlg:value="&amp;532.Profile.lblProfileName.Label"/>
+  <dlg:textfield dlg:id="txtProfileName" dlg:tab-index="0" dlg:left="90" dlg:top="7" dlg:width="164" dlg:height="14" dlg:help-text="&amp;533.Profile.txtProfileName.HelpText" dlg:value="&amp;534.Profile.txtProfileName.Text"/>
+  <dlg:textfield dlg:id="txtDocumentTitleStyle" dlg:tab-index="1" dlg:left="90" dlg:top="31" dlg:width="164" dlg:height="14" dlg:help-text="&amp;535.Profile.txtDocumentTitleStyle.HelpText" dlg:value="&amp;536.Profile.txtDocumentTitleStyle.Text"/>
+  <dlg:textfield dlg:id="txtScaling" dlg:tab-index="3" dlg:left="90" dlg:top="73" dlg:width="30" dlg:height="14" dlg:help-text="&amp;537.Profile.txtScaling.HelpText" dlg:value="&amp;538.Profile.txtScaling.Text"/>
+  <dlg:checkbox dlg:id="chkConvertToPixels" dlg:tab-index="4" dlg:left="7" dlg:top="91" dlg:width="246" dlg:height="8" dlg:help-text="&amp;539.Profile.chkConvertToPixels.HelpText" dlg:value="&amp;540.Profile.chkConvertToPixels.Label" dlg:checked="false"/>
+  <dlg:checkbox dlg:id="chkPageBreakEnabled" dlg:tab-index="5" dlg:left="7" dlg:top="109" dlg:width="246" dlg:height="8" dlg:help-text="&amp;541.Profile.chkPageBreakEnabled.HelpText" dlg:value="&amp;542.Profile.chkPageBreakEnabled.Label" dlg:checked="false"/>
+  <dlg:text dlg:id="lblPageBreakFreq" dlg:tab-index="19" dlg:left="15" dlg:top="124" dlg:width="69" dlg:height="8" dlg:help-text="&amp;543.Profile.lblPageBreakFreq.HelpText" dlg:value="&amp;544.Profile.lblPageBreakFreq.Label"/>
+  <dlg:textfield dlg:id="txtPageBreakFreq" dlg:tab-index="6" dlg:left="90" dlg:top="121" dlg:width="30" dlg:height="14" dlg:help-text="&amp;545.Profile.txtPageBreakFreq.HelpText" dlg:value="&amp;546.Profile.txtPageBreakFreq.Text"/>
+  <dlg:text dlg:id="lblPageBreakHTML" dlg:tab-index="20" dlg:left="16" dlg:top="142" dlg:width="67" dlg:height="8" dlg:help-text="&amp;547.Profile.lblPageBreakHTML.HelpText" dlg:value="&amp;548.Profile.lblPageBreakHTML.Label"/>
+  <dlg:textfield dlg:id="txtPageBreakHTML" dlg:tab-index="7" dlg:left="90" dlg:top="139" dlg:width="164" dlg:height="28" dlg:help-text="&amp;549.Profile.txtPageBreakHTML.HelpText" dlg:multiline="true" dlg:value="&amp;550.Profile.txtPageBreakHTML.Text"/>
+  <dlg:button dlg:id="btnParagraphsToTable" dlg:tab-index="9" dlg:left="7" dlg:top="205" dlg:width="70" dlg:height="14" dlg:help-text="&amp;551.Profile.btnParagraphsToTable.HelpText" dlg:value="&amp;552.Profile.btnParagraphsToTable.Label"/>
+  <dlg:button dlg:id="btnCSSOptions" dlg:tab-index="10" dlg:left="90" dlg:top="205" dlg:width="70" dlg:height="14" dlg:help-text="&amp;553.Profile.btnCSSOptions.HelpText" dlg:value="&amp;554.Profile.btnCSSOptions.Label"/>
+  <dlg:button dlg:id="btnFontAlternatives" dlg:tab-index="11" dlg:left="175" dlg:top="205" dlg:width="70" dlg:height="14" dlg:help-text="&amp;555.Profile.btnFontAlternatives.HelpText" dlg:value="&amp;556.Profile.btnFontAlternatives.Label"/>
+  <dlg:button dlg:id="btnOK" dlg:tab-index="12" dlg:left="151" dlg:top="232" dlg:width="50" dlg:height="14" dlg:help-text="&amp;557.Profile.btnOK.HelpText" dlg:default="true" dlg:value="&amp;558.Profile.btnOK.Label"/>
+  <dlg:button dlg:id="btnCancel" dlg:tab-index="13" dlg:left="203" dlg:top="232" dlg:width="50" dlg:height="14" dlg:help-text="&amp;559.Profile.btnCancel.HelpText" dlg:value="&amp;560.Profile.btnCancel.Label" dlg:button-type="cancel"/>
+  <dlg:text dlg:id="Label2" dlg:tab-index="25" dlg:left="7" dlg:top="52" dlg:width="78" dlg:height="8" dlg:help-text="&amp;561.Profile.Label2.HelpText" dlg:value="&amp;562.Profile.Label2.Label"/>
+  <dlg:textfield dlg:id="txtHtmlCodeStyle" dlg:tab-index="2" dlg:left="90" dlg:top="49" dlg:width="164" dlg:height="14" dlg:help-text="&amp;563.Profile.txtHtmlCodeStyle.HelpText" dlg:value="&amp;564.Profile.txtHtmlCodeStyle.Text"/>
+  <dlg:fixedline dlg:id="FixedLine5" dlg:tab-index="26" dlg:left="7" dlg:top="196" dlg:width="246" dlg:height="2" dlg:help-text="&amp;567.Profile.FixedLine5.HelpText" dlg:value="&amp;568.Profile.FixedLine5.Label"/>
+  <dlg:text dlg:id="Label3" dlg:tab-index="27" dlg:left="7" dlg:top="181" dlg:width="78" dlg:height="8" dlg:help-text="&amp;569.Profile.Label3.HelpText" dlg:value="&amp;570.Profile.Label3.Label"/>
+  <dlg:textfield dlg:id="txtHtmlImagesOutputFolder" dlg:tab-index="8" dlg:left="91" dlg:top="178" dlg:width="164" dlg:height="14" dlg:help-text="&amp;571.Profile.txtHtmlImagesOutputFolder.HelpText" dlg:value="&amp;572.Profile.txtHtmlImagesOutputFolder.Text"/>
+ </dlg:bulletinboard>
+</dlg:window>

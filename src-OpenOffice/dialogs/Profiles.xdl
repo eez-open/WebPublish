@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="Profiles" dlg:left="262" dlg:top="78" dlg:width="261" dlg:height="157" dlg:help-text="&amp;1043.Profiles.HelpText" dlg:closeable="true" dlg:moveable="true" dlg:title="&amp;1044.Profiles.Title">
+ <dlg:bulletinboard>
+  <dlg:fixedline dlg:id="FixedLine1" dlg:tab-index="2" dlg:left="7" dlg:top="126" dlg:width="248" dlg:height="2" dlg:help-text="&amp;1049.Profiles.FixedLine1.HelpText" dlg:value="&amp;1050.Profiles.FixedLine1.Label"/>
+  <dlg:text dlg:id="Label1" dlg:tab-index="9" dlg:left="7" dlg:top="7" dlg:width="247" dlg:height="8" dlg:help-text="&amp;1062.Profiles.Label1.HelpText" dlg:value="&amp;1063.Profiles.Label1.Label"/>
+  <dlg:menulist dlg:id="lbProfiles" dlg:tab-index="3" dlg:left="7" dlg:top="17" dlg:width="194" dlg:height="101" dlg:help-text="&amp;1064.Profiles.lbProfiles.HelpText"/>
+  <dlg:button dlg:id="btnAdd" dlg:tab-index="4" dlg:left="204" dlg:top="19" dlg:width="50" dlg:height="14" dlg:help-text="&amp;1065.Profiles.btnAdd.HelpText" dlg:value="&amp;1066.Profiles.btnAdd.Label"/>
+  <dlg:button dlg:id="btnEdit" dlg:tab-index="5" dlg:left="204" dlg:top="37" dlg:width="50" dlg:height="14" dlg:help-text="&amp;1067.Profiles.btnEdit.HelpText" dlg:value="&amp;1068.Profiles.btnEdit.Label"/>
+  <dlg:button dlg:id="btnDelete" dlg:tab-index="6" dlg:left="204" dlg:top="55" dlg:width="50" dlg:height="14" dlg:help-text="&amp;1069.Profiles.btnDelete.HelpText" dlg:value="&amp;1070.Profiles.btnDelete.Label"/>
+  <dlg:button dlg:id="btnLoad" dlg:tab-index="7" dlg:left="204" dlg:top="85" dlg:width="50" dlg:height="14" dlg:help-text="&amp;1071.Profiles.btnLoad.HelpText" dlg:value="&amp;1072.Profiles.btnLoad.Label"/>
+  <dlg:button dlg:id="btnSave" dlg:tab-index="8" dlg:left="204" dlg:top="103" dlg:width="50" dlg:height="14" dlg:help-text="&amp;1073.Profiles.btnSave.HelpText" dlg:value="&amp;1074.Profiles.btnSave.Label"/>
+  <dlg:button dlg:id="btnOK" dlg:tab-index="0" dlg:left="151" dlg:top="135" dlg:width="50" dlg:height="14" dlg:help-text="&amp;1075.Profiles.btnOK.HelpText" dlg:default="true" dlg:value="&amp;1076.Profiles.btnOK.Label"/>
+  <dlg:button dlg:id="btnCancel" dlg:tab-index="1" dlg:left="204" dlg:top="135" dlg:width="50" dlg:height="14" dlg:help-text="&amp;1077.Profiles.btnCancel.HelpText" dlg:value="&amp;1078.Profiles.btnCancel.Label" dlg:button-type="cancel"/>
+ </dlg:bulletinboard>
+</dlg:window>

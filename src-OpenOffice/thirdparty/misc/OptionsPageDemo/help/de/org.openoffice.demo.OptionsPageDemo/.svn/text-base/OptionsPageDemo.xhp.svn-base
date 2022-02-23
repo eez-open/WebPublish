@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+  <meta>
+    <topic id="textoptionsdemoxml" indexer="include" status="PUBLISH">
+      <title id="tit" xml-lang="de-DE">Über Options Page Demo</title>
+      <filename>/org.openoffice.demo.OptionsPageDemo/OptionsPageDemo.xhp</filename>
+    </topic>
+  </meta>
+  <body>
+  <paragraph role="heading" id="hd_id23842938423" xml-lang="de-DE" level="1" l10n="NEW">
+  Options Page Demo Hilfe
+  </paragraph>
+
+<paragraph role="paragraph" id="hd_id535665475630" xml-lang="de-DE" l10n="NEW">
+Ein paar einleitende Worte: dies ist die Hilfe-Seite für unsere Options Page Demo
+Erweiterung.
+Die Extension zeigt wie man für eine Erweiterung einen angepassten Options-Dialog
+erstellt und ihn elegant in die OOo Optionen integriert.
+</paragraph>
+
+    <bookmark xml-lang="de-DE" branch="hid/org.openoffice.demo.OptionsPageDemo:chkFoobarA" id="bm_foo02" localize="false"/>
+      <paragraph role="paragraph" id="hd_id47511" xml-lang="de-DE">
+        <ahelp hid="org.openoffice.demo.OptionsPageDemo:chkFoobarA" visibility="hidden">Dies ist ein erweiterter Tooltip für chkFoobarA.</ahelp>
+      </paragraph>
+      <paragraph role="heading" id="hd_id545993530" xml-lang="de-DE" level="2" l10n="NEW">
+        chkFoobarA
+      </paragraph>
+      <paragraph role="paragraph" id="hd_id471672" xml-lang="de-DE">
+      Das hier ist ein Beispiel-Hilfetext für das Component chkFoobarA. Bla bla foo foo...
+      </paragraph>
+    <bookmark xml-lang="de-DE" branch="hid/org.openoffice.demo.OptionsPageDemo:chkFoobarB" id="bm_foo03" localize="false"/>
+      <!-- This paragraph is marked as hidden and shown as tooltip //-->
+      <paragraph role="paragraph" id="hd_id456713" xml-lang="de-DE">
+        <ahelp hid="org.openoffice.demo.OptionsPageDemo:chkFoobarB" visibility="hidden">Dies ist eine erweiterter Tooltip für chkFoobarB.</ahelp>
+      </paragraph>
+      <paragraph role="heading" id="hd_id53459530" xml-lang="de-DE" level="2" l10n="NEW">
+        chkFoobarB
+      </paragraph>
+      <paragraph role="paragraph" id="hd_id4714" xml-lang="de-DE">
+      Das hier ist ein Beispiel-Hilfetext für eine Komponente, hier chkFoobarB.
+      </paragraph>
+    <bookmark xml-lang="de-DE" branch="hid/org.openoffice.demo.OptionsPageDemo:lstLikeMost" id="bm_foo04" localize="false"/>
+      <paragraph role="paragraph" id="hd_id4715" xml-lang="de-DE">
+        <ahelp hid="org.openoffice.demo.OptionsPageDemo:lstLikeMost" visibility="hidden">Dies ist der erweiterte Tooltip für lstLikeMost.</ahelp>
+      </paragraph>
+      <paragraph role="heading" id="hd_id533993530" xml-lang="de-DE" level="2" l10n="NEW">
+        lstLikeMost
+      </paragraph>
+      <paragraph role="paragraph" id="hd_id4716" xml-lang="de-DE">
+      Dies ist ein Beispielhilfetext für die Listbox lstLikeMost.
+      Wähle doch die Frucht aus, die du am Liebsten magst.
+      </paragraph>
+  </body>
+</helpdocument>
+

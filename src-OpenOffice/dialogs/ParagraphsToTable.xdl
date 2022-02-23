@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="ParagraphsToTable" dlg:left="330" dlg:top="187" dlg:width="260" dlg:height="157" dlg:help-text="&amp;724.ParagraphsToTable.HelpText" dlg:closeable="true" dlg:moveable="true" dlg:title="&amp;725.ParagraphsToTable.Title">
+ <dlg:bulletinboard>
+  <dlg:text dlg:id="Label1" dlg:tab-index="4" dlg:left="6" dlg:top="10" dlg:width="92" dlg:height="8" dlg:help-text="&amp;733.ParagraphsToTable.Label1.HelpText" dlg:value="&amp;734.ParagraphsToTable.Label1.Label"/>
+  <dlg:menulist dlg:id="lbParagraphsToTables" dlg:tab-index="0" dlg:left="6" dlg:top="20" dlg:width="194" dlg:height="105" dlg:help-text="&amp;735.ParagraphsToTable.lbParagraphsToTables.HelpText"/>
+  <dlg:button dlg:id="btnAdd" dlg:tab-index="1" dlg:left="203" dlg:top="20" dlg:width="50" dlg:height="14" dlg:help-text="&amp;736.ParagraphsToTable.btnAdd.HelpText" dlg:value="&amp;737.ParagraphsToTable.btnAdd.Label"/>
+  <dlg:button dlg:id="btnEdit" dlg:tab-index="2" dlg:left="203" dlg:top="39" dlg:width="50" dlg:height="14" dlg:help-text="&amp;738.ParagraphsToTable.btnEdit.HelpText" dlg:value="&amp;739.ParagraphsToTable.btnEdit.Label"/>
+  <dlg:button dlg:id="btnDelete" dlg:tab-index="3" dlg:left="203" dlg:top="56" dlg:width="50" dlg:height="14" dlg:help-text="&amp;740.ParagraphsToTable.btnDelete.HelpText" dlg:value="&amp;741.ParagraphsToTable.btnDelete.Label"/>
+  <dlg:button dlg:id="btnOK" dlg:tab-index="5" dlg:left="149" dlg:top="134" dlg:width="50" dlg:height="14" dlg:help-text="&amp;948.ParagraphsToTable.btnOK.HelpText" dlg:default="true" dlg:value="&amp;949.ParagraphsToTable.btnOK.Label"/>
+  <dlg:button dlg:id="btnCancel" dlg:tab-index="6" dlg:left="203" dlg:top="134" dlg:width="50" dlg:height="14" dlg:help-text="&amp;950.ParagraphsToTable.btnCancel.HelpText" dlg:value="&amp;951.ParagraphsToTable.btnCancel.Label" dlg:button-type="cancel"/>
+ </dlg:bulletinboard>
+</dlg:window>

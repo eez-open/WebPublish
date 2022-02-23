@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created with OpenOffice.org API plug-in for NetBeans Version 2.0.6.000205-->
+<description xmlns="http://openoffice.org/extensions/description/2006" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <version value="0.5.3 OO"/>
+    <identifier value="com.envox.webpublish.WebPublish"/>
+    <platform value="all"/>
+    <dependencies>
+        <OpenOffice.org-minimal-version value="3.2" d:name="OpenOffice.org 3.2"/>
+    </dependencies>
+    <display-name>
+        <name lang="en">WebPublish Extension</name>
+        <name lang="hr">WebPublish ekstenzija</name>
+    </display-name>
+    <publisher>
+        <name lang="en" xlink:href="http://www.envox.hr/">Envox d.o.o.</name>
+        <name lang="hr" xlink:href="http://www.envox.hr/">Envox d.o.o.</name>
+    </publisher>
+</description>

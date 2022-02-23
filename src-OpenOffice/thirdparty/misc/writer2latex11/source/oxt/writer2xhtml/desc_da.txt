@@ -1,0 +1,1 @@
+Writer2xhtml installerer eksportfiltre til XHTML og XHTML+MathML i Writer og Calc

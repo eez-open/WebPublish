@@ -1,0 +1,83 @@
+%% File: ooomath.sty, Copyright (C) 2002-2004 Henrik Just
+%%
+%% This file may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.2
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{ooomath}[2004/08/08 v1.0 - stylefile used by Writer2LaTeX]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Some math mode macros defining additional symbols
+% \ddotsup is taken from "The comprehensive LaTeX symbol list"
+\newcommand\defeq{\stackrel{\mathrm{def}}{=}}
+\newcommand\lambdabar{\mathchar'26\mkern-10mu\lambda}
+\newcommand\ddotsup{\mathinner{\mkern1mu\raise\p@\vbox{\kern7\p@\hbox{.}}\mkern2mu\raise4\p@\hbox{.}\mkern2mu\raise7\p@
+\hbox{.}\mkern1mu}}
+% Fallback definitions for math mode macros defined in other packages
+\providecommand\multimapdotbothA{\bullet\kern-0.4em-\kern-0.4em\circ}
+\providecommand\multimapdotbothB{\circ\kern-0.4em-\kern-0.4em\bullet}
+\providecommand\oiint{\oint} % should be area integral...
+\providecommand\oiiint{\oint} % should be volume integral...
+\providecommand\llbracket{[} % should be double...
+\providecommand\rrbracket{]} % should be double...
+% More math mode macros
+\newcommand\wideslash[2]{{}^{#1}/_{#2}} % too small
+\newcommand\widebslash[2]{{}_{#1}\backslash^{#2}} % too small
+\newcommand\normalsubformula[1]{\text{$#1$}}
+\newcommand\boldsubformula[1]{\text{\mathversion{bold}$#1$}}
+% Multiscripts, based on leftidx.sty by Harald Harders
+\newlength{\idxmathdepth}
+\newlength{\idxmathtotal}
+\newlength{\idxmathwidth}
+\newlength{\idxraiseme}
+%
+\newcommand{\idxdheight}[1]{%
+\protect\settoheight{\idxmathtotal}{\(\displaystyle#1\)}%
+\protect\settodepth{\idxmathdepth}{\(\displaystyle#1\)}%
+\protect\settowidth{\idxmathwidth}{\(\displaystyle#1\)}%
+\protect\addtolength{\idxmathtotal}{\idxmathdepth}%
+\protect\setlength{\idxraiseme}{\idxmathtotal/2-\idxmathdepth}}
+\newcommand{\idxtheight}[1]{%
+\protect\settoheight{\idxmathtotal}{\(\textstyle #1\)}%
+\protect\settodepth{\idxmathdepth}{\(\textstyle #1\)}%
+\protect\settowidth{\idxmathwidth}{\(\textstyle#1\)}%
+\protect\addtolength{\idxmathtotal}{\idxmathdepth}%
+\protect\setlength{\idxraiseme}{\idxmathtotal/2-\idxmathdepth}}
+\newcommand{\idxsheight}[1]{%
+\protect\settoheight{\idxmathtotal}{\(\scriptstyle #1\)}%
+\protect\settodepth{\idxmathdepth}{\(\scriptstyle #1\)}%
+\protect\settowidth{\idxmathwidth}{\(\scriptstyle#1\)}%
+\protect\addtolength{\idxmathtotal}{\idxmathdepth}%
+\protect\setlength{\idxraiseme}{\idxmathtotal/2-\idxmathdepth}}
+\newcommand{\idxssheight}[1]{%
+\protect\settoheight{\idxmathtotal}{\(\scriptscriptstyle #1\)}%
+\protect\settodepth{\idxmathdepth}{\(\scriptscriptstyle #1\)}%
+\protect\settowidth{\idxmathwidth}{\(\scriptscriptstyle#1\)}%
+\protect\addtolength{\idxmathtotal}{\idxmathdepth}%
+\protect\setlength{\idxraiseme}{\idxmathtotal/2-\idxmathdepth}}
+% \multiscripts{<prescripts>}{<under>}{<over>}{<formula>}{<scripts>}
+\newcommand\multiscripts[5]{%
+\mathchoice%
+{\idxdheight{#4}\rule[-\idxmathdepth]{0mm}{\idxmathtotal}#1\underset{#2}
+{\overset{#3}{#4}}\rule[-\idxmathdepth]{0mm}{\idxmathtotal}#5}%
+{\idxtheight{#4}\rule[-\idxmathdepth]{0mm}{\idxmathtotal}#1\underset{#2}
+{\overset{#3}{#4}}\rule[-\idxmathdepth]{0mm}{\idxmathtotal}#5}%
+{\idxsheight{#4}\rule[-\idxmathdepth]{0mm}{\idxmathtotal}#1\underset{#2}
+{\overset{#3}{#4}}\rule[-\idxmathdepth]{0mm}{\idxmathtotal}#5}%
+{\idxssheight{#4}\rule[-\idxmathdepth]{0mm}{\idxmathtotal}#1\underset{#2}
+{\overset{#3}{#4}}\rule[-\idxmathdepth]{0mm}{\idxmathtotal}#5}
+}%
+\newcommand\mathoverstrike[1]{%
+\mathchoice%
+{\idxdheight{#1}\rlap{\rule[\idxraiseme]{\idxmathwidth}{0.4pt}}{#1}}%
+{\idxtheight{#1}\rlap{\rule[\idxraiseme]{\idxmathwidth}{0.4pt}}{#1}}%
+{\idxsheight{#1}\rlap{\rule[\idxraiseme]{\idxmathwidth}{0.4pt}}{#1}}%
+{\idxssheight{#1}\rlap{\rule[\idxraiseme]{\idxmathwidth}{0.4pt}}{#1}}%
+}
+\endinput
+

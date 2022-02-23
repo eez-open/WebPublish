@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" oor:package="org.openoffice.TypeDetection" oor:name="Filter">
+
+  <node oor:name="Filters">
+   
+    <!-- hide integrated Writer2LaTeX 0.4 from OOo 2.0.4 -->
+	<node oor:name="LaTeX_Writer" oor:op="replace">
+		<prop oor:name="Flags"><value>NOTINFILEDIALOG NOTINCHOOSER</value></prop>
+	</node>
+	<node oor:name="BibTeX_Writer" oor:op="replace">
+		<prop oor:name="Flags"><value>NOTINFILEDIALOG NOTINCHOOSER</value></prop>
+	</node>
+  
+	<node oor:name="org.openoffice.da.writer2latex" oor:op="replace" oor:finalized="true" oor:mandatory="true">
+		<prop oor:name="FileFormatVersion"><value>0</value></prop>
+		<prop oor:name="Type"><value>writer_latex_File</value></prop>
+		<prop oor:name="DocumentService"><value>com.sun.star.text.TextDocument</value></prop>
+        <prop oor:name="UIComponent"><value>org.openoffice.da.comp.writer2latex.LaTeXOptionsDialog</value></prop>
+		<prop oor:name="UserData"><value>org.openoffice.da.comp.writer2latex.W2LExportFilter unused com.sun.star.comp.Writer.XMLOasisImporter com.sun.star.comp.Writer.XMLOasisExporter staroffice/sxw application/x-latex</value></prop>
+		<prop oor:name="FilterService"><value>com.sun.star.comp.Writer.XmlFilterAdaptor</value></prop>
+		<prop oor:name="TemplateName"/>
+		<prop oor:name="UIName">
+			<value>LaTeX 2e</value>
+		</prop>
+		<prop oor:name="Flags"><value>EXPORT ALIEN 3RDPARTYFILTER</value></prop>
+	</node>
+
+	<node oor:name="org.openoffice.da.writer2bibtex" oor:op="replace" oor:finalized="true" oor:mandatory="true">
+		<prop oor:name="FileFormatVersion"><value>0</value></prop>
+		<prop oor:name="Type"><value>writer_bibtex_File</value></prop>
+		<prop oor:name="DocumentService"><value>com.sun.star.text.TextDocument</value></prop>
+		<prop oor:name="UIComponent"/>
+		<prop oor:name="UserData"><value>org.openoffice.da.comp.writer2latex.W2LExportFilter unused com.sun.star.comp.Writer.XMLOasisImporter com.sun.star.comp.Writer.XMLOasisExporter staroffice/sxw application/x-bibtex</value></prop>
+		<prop oor:name="FilterService"><value>com.sun.star.comp.Writer.XmlFilterAdaptor</value></prop>
+		<prop oor:name="TemplateName"/>
+		<prop oor:name="UIName">
+			<value>BibTeX</value>
+		</prop>
+		<prop oor:name="Flags"><value>EXPORT ALIEN 3RDPARTYFILTER</value></prop>
+	</node>
+
+
+  </node>
+
+</oor:component-data>

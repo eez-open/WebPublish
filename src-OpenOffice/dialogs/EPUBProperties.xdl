@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="EPUBProperties" dlg:left="179" dlg:top="75" dlg:width="187" dlg:height="154" dlg:help-text="&amp;402.EPUBProperties.HelpText" dlg:closeable="true" dlg:moveable="true" dlg:title="&amp;403.EPUBProperties.Title">
+ <dlg:bulletinboard>
+  <dlg:text dlg:id="lblTitle" dlg:tab-index="8" dlg:left="6" dlg:top="10" dlg:width="35" dlg:height="8" dlg:help-text="&amp;404.EPUBProperties.lblTitle.HelpText" dlg:value="&amp;405.EPUBProperties.lblTitle.Label"/>
+  <dlg:textfield dlg:id="txtTitle" dlg:tab-index="0" dlg:left="45" dlg:top="7" dlg:width="135" dlg:height="14" dlg:help-text="&amp;406.EPUBProperties.txtTitle.HelpText" dlg:value="&amp;407.EPUBProperties.txtTitle.Text"/>
+  <dlg:text dlg:id="lblAuthor" dlg:tab-index="9" dlg:left="6" dlg:top="28" dlg:width="35" dlg:height="8" dlg:help-text="&amp;408.EPUBProperties.lblAuthor.HelpText" dlg:value="&amp;409.EPUBProperties.lblAuthor.Label"/>
+  <dlg:text dlg:id="lblPublisher" dlg:tab-index="10" dlg:left="6" dlg:top="64" dlg:width="35" dlg:height="8" dlg:help-text="&amp;410.EPUBProperties.lblPublisher.HelpText" dlg:value="&amp;411.EPUBProperties.lblPublisher.Label"/>
+  <dlg:text dlg:id="lblDescription" dlg:tab-index="11" dlg:left="6" dlg:top="100" dlg:width="35" dlg:height="8" dlg:help-text="&amp;412.EPUBProperties.lblDescription.HelpText" dlg:value="&amp;413.EPUBProperties.lblDescription.Label"/>
+  <dlg:textfield dlg:id="txtAuthor" dlg:tab-index="1" dlg:left="45" dlg:top="25" dlg:width="135" dlg:height="14" dlg:help-text="&amp;414.EPUBProperties.txtAuthor.HelpText" dlg:value="&amp;415.EPUBProperties.txtAuthor.Text"/>
+  <dlg:textfield dlg:id="txtPublisher" dlg:tab-index="3" dlg:left="45" dlg:top="61" dlg:width="135" dlg:height="14" dlg:help-text="&amp;416.EPUBProperties.txtPublisher.HelpText" dlg:value="&amp;417.EPUBProperties.txtPublisher.Text"/>
+  <dlg:textfield dlg:id="txtDescription" dlg:tab-index="5" dlg:left="45" dlg:top="97" dlg:width="135" dlg:height="28" dlg:help-text="&amp;418.EPUBProperties.txtDescription.HelpText" dlg:multiline="true" dlg:value="&amp;419.EPUBProperties.txtDescription.Text"/>
+  <dlg:button dlg:id="btnOK" dlg:tab-index="6" dlg:left="52" dlg:top="132" dlg:width="50" dlg:height="14" dlg:help-text="&amp;420.EPUBProperties.btnOK.HelpText" dlg:default="true" dlg:value="&amp;421.EPUBProperties.btnOK.Label"/>
+  <dlg:button dlg:id="btnCancel" dlg:tab-index="7" dlg:left="106" dlg:top="132" dlg:width="50" dlg:height="14" dlg:help-text="&amp;422.EPUBProperties.btnCancel.HelpText" dlg:value="&amp;423.EPUBProperties.btnCancel.Label" dlg:button-type="cancel"/>
+  <dlg:text dlg:id="lblSubject" dlg:tab-index="12" dlg:left="6" dlg:top="82" dlg:width="35" dlg:height="8" dlg:help-text="&amp;428.EPUBProperties.lblSubject.HelpText" dlg:value="&amp;429.EPUBProperties.lblSubject.Label"/>
+  <dlg:textfield dlg:id="txtSubject" dlg:tab-index="4" dlg:left="45" dlg:top="79" dlg:width="135" dlg:height="14" dlg:help-text="&amp;430.EPUBProperties.txtSubject.HelpText" dlg:value="&amp;431.EPUBProperties.txtSubject.Text"/>
+  <dlg:textfield dlg:id="txtISBN" dlg:tab-index="2" dlg:left="45" dlg:top="43" dlg:width="135" dlg:height="14" dlg:help-text="&amp;716.EPUBProperties.txtISBN.HelpText" dlg:value="&amp;717.EPUBProperties.txtISBN.Text"/>
+  <dlg:text dlg:id="lblISBN" dlg:tab-index="13" dlg:left="6" dlg:top="46" dlg:width="35" dlg:height="8" dlg:help-text="&amp;720.EPUBProperties.lblISBN.HelpText" dlg:value="&amp;721.EPUBProperties.lblISBN.Label"/>
+ </dlg:bulletinboard>
+</dlg:window>

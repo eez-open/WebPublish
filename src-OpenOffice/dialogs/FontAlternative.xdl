@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="FontAlternative" dlg:left="300" dlg:top="133" dlg:width="191" dlg:height="89" dlg:help-text="&amp;682.FontAlternative.HelpText" dlg:closeable="true" dlg:moveable="true" dlg:title="&amp;683.FontAlternative.Title">
+ <dlg:bulletinboard>
+  <dlg:text dlg:id="Label1" dlg:tab-index="0" dlg:left="6" dlg:top="7" dlg:width="180" dlg:height="8" dlg:help-text="&amp;684.FontAlternative.Label1.HelpText" dlg:value="&amp;685.FontAlternative.Label1.Label"/>
+  <dlg:text dlg:id="Label3" dlg:tab-index="5" dlg:left="6" dlg:top="35" dlg:width="180" dlg:height="8" dlg:help-text="&amp;698.FontAlternative.Label3.HelpText" dlg:value="&amp;699.FontAlternative.Label3.Label"/>
+  <dlg:button dlg:id="btnOK" dlg:tab-index="3" dlg:left="81" dlg:top="66" dlg:width="50" dlg:height="14" dlg:help-text="&amp;700.FontAlternative.btnOK.HelpText" dlg:default="true" dlg:value="&amp;701.FontAlternative.btnOK.Label"/>
+  <dlg:button dlg:id="btnCancel" dlg:tab-index="4" dlg:left="135" dlg:top="66" dlg:width="50" dlg:height="14" dlg:help-text="&amp;702.FontAlternative.btnCancel.HelpText" dlg:value="&amp;703.FontAlternative.btnCancel.Label" dlg:button-type="cancel"/>
+  <dlg:textfield dlg:id="txtFont" dlg:tab-index="1" dlg:left="6" dlg:top="17" dlg:width="180" dlg:height="14" dlg:help-text="&amp;704.FontAlternative.txtFont.HelpText" dlg:value="&amp;705.FontAlternative.txtFont.Text"/>
+  <dlg:textfield dlg:id="txtAlternative" dlg:tab-index="2" dlg:left="6" dlg:top="45" dlg:width="180" dlg:height="14" dlg:help-text="&amp;706.FontAlternative.txtAlternative.HelpText" dlg:value="&amp;707.FontAlternative.txtAlternative.Text"/>
+ </dlg:bulletinboard>
+</dlg:window>

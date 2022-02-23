@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="SelectProfile" dlg:left="190" dlg:top="89" dlg:width="191" dlg:height="54" dlg:help-text="&amp;976.SelectProfile.HelpText" dlg:closeable="true" dlg:moveable="true" dlg:title="&amp;977.SelectProfile.Title">
+ <dlg:bulletinboard>
+  <dlg:button dlg:id="btnOK" dlg:tab-index="1" dlg:left="78" dlg:top="29" dlg:width="50" dlg:height="14" dlg:help-text="&amp;982.SelectProfile.btnOK.HelpText" dlg:default="true" dlg:value="&amp;983.SelectProfile.btnOK.Label"/>
+  <dlg:button dlg:id="btnCancel" dlg:tab-index="2" dlg:left="132" dlg:top="29" dlg:width="50" dlg:height="14" dlg:help-text="&amp;984.SelectProfile.btnCancel.HelpText" dlg:value="&amp;985.SelectProfile.btnCancel.Label" dlg:button-type="cancel"/>
+  <dlg:text dlg:id="lblPublishProfile" dlg:tab-index="3" dlg:left="7" dlg:top="10" dlg:width="21" dlg:height="8" dlg:help-text="&amp;989.SelectProfile.lblPublishProfile.HelpText" dlg:value="&amp;990.SelectProfile.lblPublishProfile.Label"/>
+  <dlg:menulist dlg:id="lbProfiles" dlg:tab-index="0" dlg:left="30" dlg:top="7" dlg:width="153" dlg:height="14" dlg:help-text="&amp;992.SelectProfile.lbProfiles.HelpText" dlg:spin="true"/>
+ </dlg:bulletinboard>
+</dlg:window>

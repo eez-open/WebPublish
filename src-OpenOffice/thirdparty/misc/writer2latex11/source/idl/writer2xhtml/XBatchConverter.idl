@@ -1,0 +1,52 @@
+#ifndef __org_openoffice_da_writer2xhtml_XBatchConverter_idl__ 
+#define __org_openoffice_da_writer2xhtml_XBatchConverter_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#include <com/sun/star/beans/PropertyValue.idl>
+
+module org { module openoffice { module da { module writer2xhtml { 
+
+// This interface is an IDL version of the java interface (writer2latex.api.BatchHandler)
+interface XBatchHandler : com::sun::star::uno::XInterface  
+{ 
+
+    // method org::openoffice::da::writer2xhtml::XBatchHandler::startConversion
+    void startConversion (); 
+
+    // method org::openoffice::da::writer2xhtml::XBatchHandler::endConversion
+    void endConversion (); 
+
+    // method org::openoffice::da::writer2xhtml::XBatchHandler::startDirectory
+    void startDirectory ( [in] string sName ); 
+
+    // method org::openoffice::da::writer2xhtml::XBatchHandler::endDirectory
+    void endDirectory ( [in] string sName, [in] boolean bSuccess ); 
+
+    // method org::openoffice::da::writer2xhtml::XBatchHandler::startFile
+    void startFile ( [in] string sName ); 
+
+    // method org::openoffice::da::writer2xhtml::XBatchHandler::endFile
+    void endFile ( [in] string sName, [in] boolean bSuccess ); 
+
+    // method org::openoffice::da::writer2xhtml::XBatchHandler::cancel
+    boolean cancel ();
+	
+};
+ 
+// This interface is an IDL version of the java interface (writer2latex.api.BatchConverter)
+interface XBatchConverter : com::sun::star::uno::XInterface  
+{ 
+
+    // method org::openoffice::da::writer2xhtml::XBatchConverter::convert
+    void convert ( [in] string sSourceURL,
+                   [in] string sTargetURL,
+                   [in] sequence< com::sun::star::beans::PropertyValue > lArguments,
+                   [in] XBatchHandler handler ); 
+
+} ;
+
+
+}; }; }; }; 
+
+#endif
+
+ 

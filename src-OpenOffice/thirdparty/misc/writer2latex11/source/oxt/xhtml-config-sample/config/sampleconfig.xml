@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is a sample configuration file for Writer2xhtml
+     Except for a few changes it's identical to cleanxhtml.xml
+ -->
+
+<config>
+  <!-- options -->
+  <option name="xhtml_no_doctype" value="false" />
+  <option name="xhtml_formatting" value="ignore_all" />
+  <option name="xhtml_frame_formatting" value="ignore_all" />
+  <option name="xhtml_section_formatting" value="convert_all" />
+  <option name="xhtml_table_formatting" value="convert_all" />
+  <option name="xhtml_ignore_table_dimensions" value="false" />
+  <option name="xhtml_uplink" value="http://www.hj-gym.dk/~hj/writer2latex" />
+  <!-- options usually set in the dialog -->
+  <option name="xhtml_notes" value="false" />
+  <option name="xhtml_split_level" value="2" />
+  <option name="xhtml_repeat_levels" value="1" />
+  
+  <!-- map special OOo paragraph style to xhtml elements -->
+  <xhtml-style-map name="My Special Style" class="paragraph" element="p" css="special" />
+
+  <!-- map standard OOo paragraph styles to xhtml elements -->
+  <xhtml-style-map name="Text body" class="paragraph" element="p" css="(none)" />  
+  <xhtml-style-map name="Sender" class="paragraph" element="address" css="(none)" />
+  <xhtml-style-map name="Preformatted Text" class="paragraph" element="pre" css="(none)" />
+  <xhtml-style-map name="Quotations" class="paragraph"
+block-element="blockquote" block-css="(none)" element="p" css="(none)" />
+  <xhtml-style-map name="List Heading" class="paragraph" block-element="dl" block-css="(none)" element="dt" css="(none)" />
+  <xhtml-style-map name="List Contents" class="paragraph" block-element="dl" block-css="(none)" element="dd" css="(none)" />
+  <xhtml-style-map name="Horizontal Line" class="paragraph" element="hr" css="(none)" />
+
+  <!-- map standard OOo text styles to xhtml elements -->
+  <xhtml-style-map name="Citation" class="text" element="cite" css="(none)" />
+  <xhtml-style-map name="Definition" class="text" element="dfn" css="(none)" />
+  <xhtml-style-map name="Emphasis" class="text" element="em" css="(none)" />
+  <xhtml-style-map name="Example" class="text" element="samp" css="(none)" />
+  <xhtml-style-map name="Source Text" class="text" element="code" css="(none)" />
+  <xhtml-style-map name="Strong Emphasis" class="text" element="strong" css="(none)" />
+  <xhtml-style-map name="Teletype" class="text" element="tt" css="(none)" />
+  <xhtml-style-map name="User entry" class="text" element="kbd" css="(none)" />
+  <xhtml-style-map name="Variable" class="text" element="var" css="(none)" />
+  
+  <!-- map OOo hard formatting attributes to xhtml elements -->
+  <xhtml-style-map name="bold" class="attribute" element="b" css="(none)" />
+  <xhtml-style-map name="italics" class="attribute" element="i" css="(none)" />
+  <xhtml-style-map name="fixed" class="attribute" element="tt" css="(none)" />
+  <xhtml-style-map name="superscript" class="attribute" element="sup" css="(none)" />
+  <xhtml-style-map name="subscript" class="attribute" element="sub" css="(none)" />
+  
+</config>
+

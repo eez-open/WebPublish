@@ -1,0 +1,31 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package com.envox.webpublish;
+
+/**
+ *
+ * @author martin
+ */
+public enum CommandError {
+    ERROR_NO_FRAME,
+    ERROR_NO_CONTROLLER,
+    ERROR_NO_MODEL,
+    ERROR_NO_TEXT_DOCUMENT,
+    ERROR_CLIPBOARD_SERVICE_CREATION,
+    ERROR_MODEL_NO_TEXT_DOCUMENT,
+    ERROR_CONVERT_TO_HTML,
+    ERROR_BLOG_URL_MALFORMED,
+    ERROR_GRAPHIC_EXTRACT,
+    ERROR_PUBLISH_IMAGE_IO_ERRROR,
+    ERROR_GET_DOCUMENT_TITLE,
+    ERROR_GENERATE_EPUB,
+    ERROR_PROGRESS_DIALOG_CREATION,
+    ERROR_POST_PROPERTIES_DIALOG_CREATION,
+    ERROR_BOOK_PROPERTIES_DIALOG_CREATION,
+    ERROR_IO_EXCEPTION,
+    ERROR_GET_PROFILE,
+    ERROR_FONT_SAVE
+}

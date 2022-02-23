@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<!-- This is a sample target template for use with Writer2xhtml -->
+<head>
+<!-- Writer2xhtml will extend the title with the document title -->
+<title>Writer2xhtml sample - </title>
+<link rel="stylesheet" type="text/css" media="all" href="http://www.w3.org/StyleSheets/Core/Oldstyle" />
+<style type="text/css">
+#panel {
+  width:250px; padding:10px; margin:10px;
+  border-left:2px solid black; border-bottom:2px solid black;
+  float:right;
+}
+#header,#footer {
+  left:0; right:0; top:0; bottom:0; height: 30px; padding:10px;
+  vertical-align: middle; background-color:black; color:gray; font-weight:bold;
+  clear:right;
+}
+#content {
+  left:0; right:0; top:0; bottom:0;
+}
+#header a,#footer a {
+  text-decoration: none; background-color: black; color: white;
+}
+#header a:before,#footer a:before, #header span.nolink:before, #footer span.nolink:before {
+  content:'[';
+}
+#header a:after,#footer a:after, #header span.nolink:after, #footer span.nolink:after {
+  content:']';
+}
+#header a:hover,#footer a:hover {
+  text-decoration: none; background-color: white; color: black;
+}
+pre { clear:right; }
+#panel p.level1 { margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; font-size: 14px;}
+#panel p.level2 { margin-top:1px; margin-bottom:1px; margin-left:10px; margin-right:0px; font-size: 12px;}
+#panel p.level3 { margin-top:1px; margin-bottom:1px; margin-left:20px; margin-right:0px; font-size: 10px;}
+
+p.special { font-size:20pt; margin-top:20px; margin-bottom:20px; color:green; }
+</style>
+</head>
+<body>
+<!-- Writer2xhtml will add content after existing content in the div's -->
+<div id="header">Writer2xhtml </div>
+<div id="content">
+<div id="panel"/>
+</div>
+<div id="footer">Writer2xhtml </div>
+</body>
+</html>

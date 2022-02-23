@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifest:manifest PUBLIC "-//OpenOffice.org//DTD Manifest 1.0//EN" "Manifest.dtd">
+<manifest:manifest>
+    <manifest:file-entry
+     manifest:full-path="writer2xhtml-filter.jar"
+     manifest:media-type="application/vnd.sun.star.uno-component;type=Java"/>
+
+    <manifest:file-entry
+     manifest:full-path="w2x_types.xcu"
+     manifest:media-type="application/vnd.sun.star.configuration-data"/>
+
+    <manifest:file-entry
+     manifest:full-path="w2x_filters.xcu"
+     manifest:media-type="application/vnd.sun.star.configuration-data"/>
+	 
+    <manifest:file-entry
+     manifest:full-path="Options.xcs"
+     manifest:media-type="application/vnd.sun.star.configuration-schema"/>
+
+    <manifest:file-entry
+     manifest:full-path="Options.xcu"
+     manifest:media-type="application/vnd.sun.star.configuration-data"/>
+
+    <manifest:file-entry
+     manifest:full-path="W2XDialogs/"
+     manifest:media-type="application/vnd.sun.star.basic-library"/>
+	 
+    <manifest:file-entry
+     manifest:full-path="writer2xhtml.rdb"
+     manifest:media-type="application/vnd.sun.star.uno-typelibrary;type=RDB"/>
+
+</manifest:manifest>

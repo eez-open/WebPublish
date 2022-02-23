@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-schema oor:name="Options"
+  oor:package="org.openoffice.da.Writer2LaTeX"
+  xml:lang="en-US"
+  xmlns:oor="http://openoffice.org/2001/registry"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <templates>
+        <group oor:name="Configuration">
+            <prop oor:name="DisplayName" oor:type="xs:string" oor:localized="true" />
+            <prop oor:name="LockedOptions" oor:type="xs:string" />
+            <prop oor:name="ConfigURL" oor:type="xs:string" />
+            <!--<prop oor:name="TargetTemplateURL" oor:type="xs:string" />-->
+        </group>
+        <group oor:name="Template">
+            <prop oor:name="TemplateName" oor:type="xs:string" />
+            <prop oor:name="ConfigName" oor:type="xs:string" />
+        </group>
+    </templates>
+    <component>
+        <group oor:name="LaTeXOptions">
+            <!-- General -->
+            <prop oor:name="Config" oor:type="xs:short" />
+            <prop oor:name="ConfigName" oor:type="xs:string" />
+            <prop oor:name="Backend" oor:type="xs:short" />
+            <prop oor:name="Inputencoding" oor:type="xs:short" />
+            <prop oor:name="Multilingual" oor:type="xs:boolean" />
+            <prop oor:name="GreekMath" oor:type="xs:boolean" />
+            <prop oor:name="AdditionalSymbols" oor:type="xs:boolean" />
+            <!-- Bibliography -->
+            <prop oor:name="UseBibtex" oor:type="xs:boolean" />
+            <prop oor:name="BibtexStyle" oor:type="xs:string" />
+            <!-- Files -->
+            <prop oor:name="WrapLines" oor:type="xs:boolean" />
+            <prop oor:name="WrapLinesAfter" oor:type="xs:int" />
+            <prop oor:name="SplitLinkedSections" oor:type="xs:boolean" />
+            <prop oor:name="SplitToplevelSections" oor:type="xs:boolean" />
+            <prop oor:name="SaveImagesInSubdir" oor:type="xs:boolean" />
+            <!--Special content -->
+            <prop oor:name="Notes" oor:type="xs:short" />
+            <prop oor:name="Metadata" oor:type="xs:boolean" />
+            <!-- Figures and tables -->
+            <prop oor:name="OriginalImageSize" oor:type="xs:boolean"/>
+            <prop oor:name="OptimizeSimpleTables" oor:type="xs:boolean"/>
+            <prop oor:name="SimpleTableLimit" oor:type="xs:int"/>
+            <prop oor:name="FloatTables" oor:type="xs:boolean"/>
+            <prop oor:name="FloatFigures" oor:type="xs:boolean"/>
+            <prop oor:name="FloatOptions" oor:type="xs:short"/>
+            <!-- AutoCorrect -->
+            <prop oor:name="IgnoreHardPageBreaks" oor:type="xs:boolean" />
+            <prop oor:name="IgnoreHardLineBreaks" oor:type="xs:boolean" />
+            <prop oor:name="IgnoreEmptyParagraphs" oor:type="xs:boolean" />
+            <prop oor:name="IgnoreDoubleSpaces" oor:type="xs:boolean" />
+            <!-- Configurations -->
+            <set oor:name="Configurations" oor:node-type="Configuration" />
+            <set oor:name="Templates" oor:node-type="Template" />			
+        </group>
+    </component>
+</oor:component-schema>		

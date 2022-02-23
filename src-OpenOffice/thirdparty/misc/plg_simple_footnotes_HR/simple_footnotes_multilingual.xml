@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - Simple Footnotes Multilingual, HR</name>
+	<creationDate>November 2009</creationDate>
+	<author>J. Frank, multilanguage by M. Podolak</author>
+	<authorEmail>james@jamesfrank.info</authorEmail>
+	<authorUrl>http://jamesfrank.info</authorUrl>
+	<copyright>(c) 2008 James Frank</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>0.3</version>
+	<description>Multilingual footnote and endnote plugin, HR</description>
+	<files>
+		<filename plugin="simple_footnotes_multilingual">simple_footnotes_multilingual.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_simple_footnotes_multilingual.ini</language>
+		<language tag="hr-HR">hr-HR.plg_content_simple_footnotes_multilingual.ini</language>
+	</languages>
+	<params>
+		<param name="show_back_links" type="radio" default="1" label="Show Back Link" description="Show the 'back' links after footnotes.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

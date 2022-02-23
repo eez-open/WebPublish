@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-schema xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    oor:name="Options" oor:package="com.envox.webpublish" xml:lang="en-US">
+
+    <info>
+        <author>Martin Vladic, Envox d.o.o.</author>
+        <desc>Contains the options data used for the WebPublish extensions.</desc>
+    </info>
+
+  <component>
+    <group oor:name="Leaves">
+      <group oor:name="Options">
+        <prop oor:name="Profiles" oor:type="xs:string">
+          <value></value>
+        </prop>
+      </group>
+    </group>
+  </component>
+
+</oor:component-schema>

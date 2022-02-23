@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" oor:package="org.openoffice.TypeDetection" oor:name="Types">
+
+   <node oor:name="Types">
+
+	<node oor:name="writer_bibtex_File" oor:op="replace" oor:finalized="true" oor:mandatory="true">
+		<prop oor:name="DetectService"/>
+		<prop oor:name="URLPattern"/>
+		<prop oor:name="Extensions"><value>bib</value></prop>
+		<prop oor:name="MediaType"/>
+		<prop oor:name="Preferred"><value>false</value></prop>
+		<prop oor:name="UIName">
+			<value>BibTeX Data File</value>
+		</prop>
+		<prop oor:name="ClipboardFormat"/>
+	</node>
+
+	<node oor:name="writer_latex_File" oor:op="replace" oor:finalized="true" oor:mandatory="true">
+		<prop oor:name="DetectService"/>
+		<prop oor:name="URLPattern"/>
+		<prop oor:name="Extensions"><value>tex</value></prop>
+		<prop oor:name="MediaType"/>
+		<prop oor:name="Preferred"><value>false</value></prop>
+		<prop oor:name="UIName">
+			<value>LaTeX 2e</value>
+		</prop>
+		<prop oor:name="ClipboardFormat"/>
+	</node>
+
+   </node>
+
+</oor:component-data>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-data oor:name="Options"
+  oor:package="org.openoffice.da.Writer2xhtml"
+  xml:lang="en-US"
+  xmlns:oor="http://openoffice.org/2001/registry"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- This is a sample registry file for use with Writer2xhtml -->
+    <node oor:name="XhtmlOptions">
+        <node oor:name="Configurations">
+            <!-- This node adds a configuration to the ui -->
+            <node oor:name="sampleconfig1" oor:op="replace">
+                <!-- A comma separated of options that should be locked in the ui -->
+                <prop oor:name="LockedOptions" oor:type="xs:string">
+                    <value>xhtml_notes,xhtml_split_level,xhtml_repeat_levels</value>
+                </prop>
+                <!-- The display name will be used in the list box -->
+                <prop oor:name="DisplayName" oor:type="xs:string" oor:localized="true">
+                    <value>Sample custom style</value>
+                </prop>
+                <!-- This url points to the configuration to use -->
+                <prop oor:name="ConfigURL" oor:type="xs:string">
+                    <value>%origin%/config/sampleconfig.xml</value>
+                </prop>
+                <!-- This url points to the target template to use -->
+                <prop oor:name="TargetTemplateURL" oor:type="xs:string">
+                    <value>%origin%/config/sampletemplate.xhtml</value>
+                </prop>
+            </node>
+        </node>
+        <node oor:name="Templates">
+            <!-- This node maps an OOo template to the our configuration -->
+            <node oor:name="sampletemplate1" oor:op="replace">
+                <prop oor:name="TemplateName" oor:type="xs:string">
+                    <value>XHTML template</value>
+                </prop>
+                <prop oor:name="ConfigName" oor:type="xs:string">
+                    <value>sampleconfig1</value>
+                </prop>
+            </node>
+        </node>
+    </node>
+</oor:component-data>
+
+
+		
