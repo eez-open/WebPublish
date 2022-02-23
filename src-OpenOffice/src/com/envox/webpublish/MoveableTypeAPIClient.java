@@ -139,16 +139,18 @@ public class MoveableTypeAPIClient {
     }
 
     public void publish(PostProperties postProperties, String description) throws XmlRpcException {
-        if (postProperties.getPostAsPage()) {
+        if (postProperties.getPostType() == "page") {
             wpPublish(postProperties, description);
             return;
         }
 
         HashMap content = new HashMap();
 
-        content.put("title", postProperties.getTitle());
+        content.put("post_title", postProperties.getTitle());
 
-        content.put("description", description);
+        content.put("post_content", description);
+        
+        content.put("post_type", postProperties.getPostType());
 
         String[] categories = (String[]) ArrayUtils.addAll(
                 new String[] { postProperties.getPrimaryCategory() },
@@ -161,8 +163,8 @@ public class MoveableTypeAPIClient {
             Calendar calendar = new GregorianCalendar();
             calendar.set(dateTime.Year, dateTime.Month - 1, dateTime.Day, dateTime.Hours, dateTime.Minutes, dateTime.Seconds);
             Date date = calendar.getTime();
-            content.put("dateCreated", date);
-            content.put("date_created_gmt", date);
+            content.put("post_date", date);
+            content.put("post_date_gmt ", date);
         }
 
         if (postProperties.getKeywords().length > 0)
@@ -178,10 +180,10 @@ public class MoveableTypeAPIClient {
         }
         */
 
-        content.put("mt_excerpt", postProperties.getExcerpt());
+        content.put("post_excerpt", postProperties.getExcerpt());
         
         if (StringUtils.isBlank(postProperties.getPostId())) {
-            Object result = m_client.execute("metaWeblog.newPost", new Object[]{
+            Object result = m_client.execute("wp.newPost", new Object[]{
                 m_blogID,
                 m_userName,
                 m_password,
@@ -190,7 +192,7 @@ public class MoveableTypeAPIClient {
             });
             postProperties.setPostId((String)result);
         } else {
-            m_client.execute("metaWeblog.editPost", new Object[]{
+            m_client.execute("wp.editPost", new Object[]{
                 postProperties.getPostId(),
                 m_userName,
                 m_password,

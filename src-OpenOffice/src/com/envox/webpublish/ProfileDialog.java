@@ -38,7 +38,8 @@ public class ProfileDialog
         "lblPageBreakHTML",
         "txtPageBreakHTML"
     };
-    List<ParagraphsToTableRule> m_rules;
+    List<ParagraphsToTableRule> m_paragraphsToTableRules;
+    List<ClassToTagRule> m_classToTagRules;
     String m_cssSelector;
     String m_customCSS;
     String m_cssImagesFolder;
@@ -51,7 +52,7 @@ public class ProfileDialog
     }
 
     public boolean show() throws Exception {
-        createDialog(m_profile.isPublishProfile() ? "PublishProfile" : "Profile");
+        createDialog(m_profile.isPublishProfile() ? "PublishProfile" : "ProfileDialog");
 
         startLoadBlogsThread();
 
@@ -76,6 +77,9 @@ public class ProfileDialog
 
         m_controlContainer.getButton("btnParagraphsToTable").setActionCommand("btnParagraphsToTable");
         m_controlContainer.getButton("btnParagraphsToTable").addActionListener(this);
+
+        m_controlContainer.getButton("btnHTMLOptions").setActionCommand("btnHTMLOptions");
+        m_controlContainer.getButton("btnHTMLOptions").addActionListener(this);
 
         m_controlContainer.getButton("btnCSSOptions").setActionCommand("btnCSSOptions");
         m_controlContainer.getButton("btnCSSOptions").addActionListener(this);
@@ -102,7 +106,8 @@ public class ProfileDialog
         m_controlContainer.getCheckBox("chkPageBreakEnabled").setState(m_profile.getPageBreakEnabled() ? (short) 1 : (short) 0);
         m_controlContainer.getTextComponent("txtPageBreakFreq").setText(Integer.toString(m_profile.getPageBreakFreq()));
         m_controlContainer.getTextComponent("txtPageBreakHTML").setText(m_profile.getPageBreakHTML());
-        m_rules = ParagraphsToTableRule.clone(m_profile.getParagraphsToTableRules());
+        m_paragraphsToTableRules = ParagraphsToTableRule.clone(m_profile.getParagraphsToTableRules());
+        m_classToTagRules = ClassToTagRule.clone(m_profile.getClassToTagRules());
         m_cssSelector = m_profile.getCSSSelector();
         m_customCSS = m_profile.getCustomCSS();
         m_cssImagesFolder = m_profile.getCSSImagesFolder();
@@ -132,7 +137,8 @@ public class ProfileDialog
         m_profile.setPageBreakEnabled(m_controlContainer.getCheckBox("chkPageBreakEnabled").getState() == 1 ? true : false);
         m_profile.setPageBreakFreq(Integer.parseInt(m_controlContainer.getTextComponent("txtPageBreakFreq").getText()));
         m_profile.setPageBreakHTML(m_controlContainer.getTextComponent("txtPageBreakHTML").getText());
-        m_profile.setParagraphsToTableRules(m_rules);
+        m_profile.setParagraphsToTableRules(m_paragraphsToTableRules);
+        m_profile.setClassToTagRules(m_classToTagRules);
         m_profile.setCSSSelector(m_cssSelector);
         m_profile.setCustomCSS(m_customCSS);
         m_profile.setCSSImagesFolder(m_cssImagesFolder);
@@ -311,10 +317,19 @@ public class ProfileDialog
                 test(strBlogAddress, strBlogUsername, strBlogPassword);
             }
         } else if (arg0.ActionCommand.equals("btnParagraphsToTable")) {
-            ParagraphsToTableDialog dlg = new ParagraphsToTableDialog(ParagraphsToTableRule.clone(m_rules));
+            ParagraphsToTableDialog dlg = new ParagraphsToTableDialog(ParagraphsToTableRule.clone(m_paragraphsToTableRules));
             try {
                 if (dlg.show()) {
-                    m_rules = dlg.getRules();
+                    m_paragraphsToTableRules = dlg.getRules();
+                }
+            } catch (Exception ex) {
+                Logger.getLogger(ProfileDialog.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } else if (arg0.ActionCommand.equals("btnHTMLOptions")) {
+            HTMLOptionsDialog dlg = new HTMLOptionsDialog(ClassToTagRule.clone(m_classToTagRules));
+            try {
+                if (dlg.show()) {
+                    m_classToTagRules = dlg.getRules();
                 }
             } catch (Exception ex) {
                 Logger.getLogger(ProfileDialog.class.getName()).log(Level.SEVERE, null, ex);

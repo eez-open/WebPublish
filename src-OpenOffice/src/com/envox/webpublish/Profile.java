@@ -42,6 +42,7 @@ public class Profile {
     private int m_pageBreakFreq = 1;
     private String m_pageBreakHTML = "";
     private List<ParagraphsToTableRule> m_paragraphsToTableRules = new ArrayList<ParagraphsToTableRule>();
+    private List<ClassToTagRule> m_classToTagRules = new ArrayList<ClassToTagRule>();
     private String m_CSSSelector = "";
     private String m_customCSS = "";
     private String m_cssImagesFolder = "";
@@ -106,6 +107,12 @@ public class Profile {
     }
 
     public Type getType() { return m_type; }
+    public String getTypeName() {
+        if (m_type == Type.EPUB) return "EPUB";
+        else if (m_type == Type.HTML) return "HTML";
+        else if (m_type == Type.Joomla) return "Joomla";
+        return "WordPress";
+    }
 
     public boolean isPublishProfile() { return m_type != Type.HTML && m_type != Type.EPUB; }
 
@@ -155,6 +162,9 @@ public class Profile {
 
     public List<ParagraphsToTableRule> getParagraphsToTableRules() { return m_paragraphsToTableRules; }
     public void setParagraphsToTableRules(List<ParagraphsToTableRule> paragraphsToTableRules) { m_paragraphsToTableRules = paragraphsToTableRules; }
+
+    public List<ClassToTagRule> getClassToTagRules() { return m_classToTagRules; }
+    public void setClassToTagRules(List<ClassToTagRule> classToTagRules) { m_classToTagRules = classToTagRules; }
 
     public String getCSSSelector() { return m_CSSSelector; }
     public void setCSSSelector(String CSSSelector) { m_CSSSelector = CSSSelector; }
@@ -242,6 +252,14 @@ public class Profile {
             m_paragraphsToTableRules.add(rule);
         }
 
+        nodeList = parentElement.getElementsByTagName("ClassToTagRule");
+        for (int i = 0; i < nodeList.getLength(); ++i) {
+            Element ruleElement = (Element) nodeList.item(i);
+            ClassToTagRule rule = new ClassToTagRule();
+            rule.loadFromXML(ruleElement);
+            m_classToTagRules.add(rule);
+        }
+
         m_CSSSelector = Util.getTagValue("CSSSelector", parentElement);
         m_customCSS = Util.getTagValue("CustomCSS", parentElement);
         m_cssImagesFolder = Util.getTagValue("CSSImagesFolder", parentElement);
@@ -293,6 +311,14 @@ public class Profile {
         Element childElement = doc.createElement("ParagraphsToTableRules");
         for (ParagraphsToTableRule rule:m_paragraphsToTableRules) {
             Element ruleElement = doc.createElement("ParagraphsToTableRule");
+            rule.saveToXML(ruleElement, doc);
+            childElement.appendChild(ruleElement);
+        }
+        parentElement.appendChild(childElement);
+
+        childElement = doc.createElement("ClassToTagRules");
+        for (ClassToTagRule rule:m_classToTagRules) {
+            Element ruleElement = doc.createElement("ClassToTagRule");
             rule.saveToXML(ruleElement, doc);
             childElement.appendChild(ruleElement);
         }

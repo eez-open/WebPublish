@@ -21,7 +21,7 @@ public class PostProperties {
     private String m_pageId;
     private String m_publishProfile;
     private String m_title;
-    private boolean m_postAsPage;
+    private String m_postType;
     private String m_primaryCategory;
     private String[] m_additionalCategories;
     private int m_publishOption;
@@ -58,8 +58,12 @@ public class PostProperties {
     public String getTitle() { return m_title; }
     public void setTitle(String title) { m_title = title; }
 
-    public boolean getPostAsPage() { return m_postAsPage; }
-    public void setPostAsPage(boolean postAsPage) { m_postAsPage = postAsPage; }
+    public String getPostType() { return m_postType; }
+    public void setPostType(String postType) { m_postType = postType; }
+
+    public boolean isPage() {
+        return m_postType != null && m_postType.compareTo("page") == 0;
+    }
 
     public String getPrimaryCategory() { return m_primaryCategory; }
     public void setPrimaryCategory(String primaryCategory) { m_primaryCategory = primaryCategory; }
@@ -108,9 +112,17 @@ public class PostProperties {
         }
 
         if (isWordPressProfile()) {
-            m_postAsPage = m_documentProperties.readCustomProperty("WebPublish_Post_PostAsPage", false);
+            m_postType = m_documentProperties.readCustomProperty("WebPublish_Post_PostType", null);
+            if (m_postType == null) {
+                boolean postAsPage = m_documentProperties.readCustomProperty("WebPublish_Post_PostAsPage", false);
+                if (postAsPage) {
+                    m_postType = "page";
+                } else {
+                    m_postType = "post";
+                }
+            }
         } else {
-            m_postAsPage = false;
+            m_postType = null;
         }
 
         m_primaryCategory = m_documentProperties.readCustomProperty("WebPublish_Post_PrimaryCategory", "");
@@ -144,9 +156,9 @@ public class PostProperties {
         m_documentProperties.setTitle(m_title);
 
         if (isWordPressProfile()) {
-            m_documentProperties.writeCustomProperty("WebPublish_Post_PostAsPage", "", m_postAsPage ? "1" : "0");
+            m_documentProperties.writeCustomProperty("WebPublish_Post_PostType", "", m_postType);
         } else {
-            m_documentProperties.writeCustomProperty("WebPublish_Post_PostAsPage", "", "");
+            m_documentProperties.writeCustomProperty("WebPublish_Post_PostType", "", "");
         }
 
         m_documentProperties.writeCustomProperty("WebPublish_Post_PrimaryCategory", "", m_primaryCategory);

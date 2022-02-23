@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="HTMLOptionsClassToTagRule" dlg:left="336" dlg:top="187" dlg:width="162" dlg:height="76" dlg:help-text="&amp;624.HTMLOptionsClassToTagRule.HelpText" dlg:closeable="true" dlg:moveable="true" dlg:title="&amp;625.HTMLOptionsClassToTagRule.Title">
+ <dlg:bulletinboard>
+  <dlg:button dlg:id="btnOK" dlg:tab-index="0" dlg:left="48" dlg:top="53" dlg:width="50" dlg:height="14" dlg:help-text="&amp;630.HTMLOptionsClassToTagRule.btnOK.HelpText" dlg:default="true" dlg:value="&amp;631.HTMLOptionsClassToTagRule.btnOK.Label"/>
+  <dlg:button dlg:id="btnCancel" dlg:tab-index="1" dlg:left="104" dlg:top="53" dlg:width="50" dlg:height="14" dlg:help-text="&amp;632.HTMLOptionsClassToTagRule.btnCancel.HelpText" dlg:value="&amp;633.HTMLOptionsClassToTagRule.btnCancel.Label" dlg:button-type="cancel"/>
+  <dlg:text dlg:id="lblClass" dlg:tab-index="2" dlg:left="7" dlg:top="15" dlg:width="45" dlg:height="8" dlg:help-text="&amp;642.HTMLOptionsClassToTagRule.lblClass.HelpText" dlg:value="&amp;643.HTMLOptionsClassToTagRule.lblClass.Label"/>
+  <dlg:text dlg:id="lblTag" dlg:tab-index="4" dlg:left="7" dlg:top="33" dlg:width="45" dlg:height="8" dlg:help-text="&amp;644.HTMLOptionsClassToTagRule.lblTag.HelpText" dlg:value="&amp;645.HTMLOptionsClassToTagRule.lblTag.Label"/>
+  <dlg:textfield dlg:id="txtClass" dlg:tab-index="3" dlg:left="55" dlg:top="13" dlg:width="100" dlg:height="14" dlg:help-text="&amp;646.HTMLOptionsClassToTagRule.txtClass.HelpText" dlg:value="&amp;647.HTMLOptionsClassToTagRule.txtClass.Text"/>
+  <dlg:textfield dlg:id="txtTag" dlg:tab-index="5" dlg:left="55" dlg:top="31" dlg:width="100" dlg:height="14" dlg:help-text="&amp;648.HTMLOptionsClassToTagRule.txtTag.HelpText" dlg:value="&amp;649.HTMLOptionsClassToTagRule.txtTag.Text"/>
+ </dlg:bulletinboard>
+</dlg:window>

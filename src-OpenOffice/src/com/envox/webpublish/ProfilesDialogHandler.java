@@ -43,7 +43,13 @@ public class ProfilesDialogHandler {
     }
 
     private void addProfileToList(Profile profile) {
-        m_controlContainer.getListBox("lbProfiles").addItem(profile.getProfileName(), (short)m_profiles.size());
+        String profileName = profile.getProfileName();
+        String profileType = profile.getTypeName();
+        if (profileName.compareTo(profileType) == 0) {
+            m_controlContainer.getListBox("lbProfiles").addItem(profileName, (short)m_profiles.size());
+        } else {
+            m_controlContainer.getListBox("lbProfiles").addItem(profileName + " (" + profileType + ")", (short)m_profiles.size());
+        }
     }
 
     public void initControls() {

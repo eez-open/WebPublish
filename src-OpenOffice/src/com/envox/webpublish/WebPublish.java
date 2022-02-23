@@ -473,7 +473,7 @@ public final class WebPublish extends WeakBase
         }
 
         // show properties dialog if postId is null
-        final boolean firstPublish = StringUtils.isBlank(postProperties.getPostAsPage() ? postProperties.getPageId() : postProperties.getPostId());
+        final boolean firstPublish = StringUtils.isBlank(postProperties.isPage() ? postProperties.getPageId() : postProperties.getPostId());
         if (firstPublish) {
             PostPropertiesDialog dlg = new PostPropertiesDialog(blogClient, postProperties);
             try {

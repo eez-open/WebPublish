@@ -41,7 +41,7 @@ public class PostPropertiesDialog
 
     private XTextComponent m_txtTitle;
 
-    private XCheckBox m_chkPostAsPage;
+    private XListBox m_lbPostType;
 
     private XListBox m_lbPrimaryCategory;
     private XCheckBox m_chkAdditionalCategories;
@@ -87,8 +87,10 @@ public class PostPropertiesDialog
 
         m_txtTitle = m_controlContainer.getTextComponent("txtTitle");
 
-        m_chkPostAsPage = m_controlContainer.getCheckBox("chkPostAsPage");
-        m_chkPostAsPage.addItemListener(this);
+        m_lbPostType = m_controlContainer.getListBox("lbPostType");
+        m_lbPostType.addItemListener(this);
+        String[] postTypes = {"post", "page", "docs"};
+        addItems(postTypes, m_lbPostType);
 
         m_lbPrimaryCategory = m_controlContainer.getListBox("lbPrimaryCategory");
         m_lbPrimaryCategory.addItemListener(this);
@@ -143,10 +145,10 @@ public class PostPropertiesDialog
     */
 
     private void toControls() {
-        if (m_postProperties.getPostAsPage()) {
-            m_txtPostId.setText(m_postProperties.getPostId());
-        } else {
+        if (m_postProperties.isPage()) {
             m_txtPostId.setText(m_postProperties.getPageId());
+        } else {
+            m_txtPostId.setText(m_postProperties.getPostId());
         }
 
         if (m_postProperties.getPublishProfile() != null) {
@@ -157,11 +159,16 @@ public class PostPropertiesDialog
             m_txtTitle.setText(m_postProperties.getTitle());
         }
 
-        m_chkPostAsPage.setState((short)(m_postProperties.getPostAsPage() ? 1 : 0));
-
         String primaryCategoryName = m_blogClient.getCategoryNameFromId(m_postProperties.getPrimaryCategory());
         if (primaryCategoryName != null) {
             m_lbPrimaryCategory.selectItem(primaryCategoryName, true);
+        }
+
+        String postType = m_postProperties.getPostType();
+        if (postType != null) {
+            m_lbPostType.selectItem(postType, true);
+        } else {
+            m_lbPostType.selectItem("post", true);
         }
 
         String[] additionalCategoriesNames = m_blogClient.getCategoriesNamesFromIds(m_postProperties.getAdditionalCategories());
@@ -204,9 +211,9 @@ public class PostPropertiesDialog
     }
 
     private void updateControls() {
-        m_controlContainer.getWindow("chkPostAsPage").setEnable(m_postProperties.isWordPressProfile());
+        m_controlContainer.getWindow("lbPostType").setEnable(m_postProperties.isWordPressProfile());
 
-        if (m_postProperties.isWordPressProfile() && m_chkPostAsPage.getState() == 1) {
+        if (m_postProperties.isWordPressProfile() && m_postProperties.isPage()) {
             m_txtPostId.setText(m_postProperties.getPageId());
 
             m_controlContainer.getWindow("lblPrimaryCategory").setEnable(false);
@@ -258,7 +265,7 @@ public class PostPropertiesDialog
         m_postProperties.setTitle(m_txtTitle.getText());
 
         if (m_postProperties.isWordPressProfile()) {
-            m_postProperties.setPostAsPage(m_chkPostAsPage.getState() == 1 ? true : false);
+            m_postProperties.setPostType(m_lbPostType.getSelectedItem());
         }
 
         m_postProperties.setPrimaryCategory(m_blogClient.getCategoryIdFromName(m_lbPrimaryCategory.getSelectedItem()));
@@ -316,7 +323,14 @@ public class PostPropertiesDialog
                 return;
             }
 
-            if (m_chkPostAsPage.getState() == 0) {
+            String postType = m_lbPostType.getSelectedItem();
+            if (postType == null) {
+                Util.showMessageBox("WebPublish", "Select post type.");
+                m_controlContainer.getWindow("lbPostType").setFocus();
+                return;
+            }
+
+            if (postType.compareTo("page") != 0) {
                 if (m_blogClient.getCategoryIdFromName(m_lbPrimaryCategory.getSelectedItem()) == null) {
                     Util.showMessageBox("WebPublish", "Select primary category.");
                     m_controlContainer.getWindow("lbPrimaryCategory").setFocus();

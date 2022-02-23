@@ -230,7 +230,8 @@ public class Paragraph extends Block {
             }
             builder.appendHtml(html.toString());
         } else {
-            builder.beginTag(isListItem() ? "li" : "p");
+            String tagName = isListItem() ? "li" : m_doc.getParagraphTagName(m_paraStyleName);
+            builder.beginTag(tagName);
 
             if (m_id != null) {
                 builder.attr("id", m_id);
@@ -259,7 +260,7 @@ public class Paragraph extends Block {
                 }
             }
 
-            builder.endTag(isListItem() ? "li" : "p");
+            builder.endTag(tagName);
         }
     }
 

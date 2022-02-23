@@ -10,6 +10,7 @@ import com.envox.webpublish.FontAlternative;
 import com.envox.webpublish.Helper.ByteArrayXStream;
 import com.envox.webpublish.Helper.ReplaceCallback;
 import com.envox.webpublish.ParagraphsToTableRule;
+import com.envox.webpublish.ClassToTagRule;
 import com.envox.webpublish.Profile;
 import com.envox.webpublish.Util;
 import com.sun.star.beans.PropertyValue;
@@ -134,7 +135,7 @@ public class Document {
 
     private final StringBuilder m_css = new StringBuilder();
 
-    private List<ParagraphsToTableRule> m_rules;
+    private List<ParagraphsToTableRule> m_paragraphsToTableRules;
 
     // </editor-fold>
 
@@ -327,9 +328,9 @@ public class Document {
         builder.appendCss("");
 
         // paragraphs to tables css
-        if (m_rules.size() > 0) {
+        if (m_paragraphsToTableRules.size() > 0) {
             builder.appendCss("/* Paragraphs to tables */");
-            for (ParagraphsToTableRule rule:m_rules) {
+            for (ParagraphsToTableRule rule:m_paragraphsToTableRules) {
                 if (StringUtils.isNotBlank(rule.getTableCSS())) {
                     String[] lines = rule.getTableCSS().split("\\r?\\n");
                     for (String line:lines) {
@@ -546,10 +547,19 @@ public class Document {
     }
 
     public void useTableToParagraphsFilter() throws Exception {
-        m_rules = m_profile.getParagraphsToTableRules();
-        if (m_rules.size() > 0) {
-            m_filters.add(createParagraphsToTableFilter(m_rules));
+        m_paragraphsToTableRules = m_profile.getParagraphsToTableRules();
+        if (m_paragraphsToTableRules.size() > 0) {
+            m_filters.add(createParagraphsToTableFilter(m_paragraphsToTableRules));
         }
+    }
+
+    public String getParagraphTagName(String paraStyleName) {
+        for (ClassToTagRule rule:m_profile.getClassToTagRules()) {
+            if (rule.getClassName().compareTo(paraStyleName) == 0) {
+                return rule.getTagName();
+            }
+        }
+        return "p";
     }
 
     public void useFootnotesFilter() throws Exception {
