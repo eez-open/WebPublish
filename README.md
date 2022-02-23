@@ -20,4 +20,4 @@ The WebPublish require installed [OpenOffice](https://www.openoffice.org/downloa
 
 Reference document that include various .odt attributes can be found [here](https://github.com/eez-open/WebPublish/blob/master/doc/EEZ%20WebPublish%20test%20document.odt). The WebPublish for OpenOffice outputs can be found [here](https://github.com/eez-open/WebPublish/tree/master/OpenOffice/test%20outputs).
 
-_All web pages on [EEZ web site](https://www.envox.hr/eez/) were generated with WebPublish for Joomla CMS._
+_All web pages on [EEZ web site](https://www.envox.eu) were generated with WebPublish for WordPress CMS._
