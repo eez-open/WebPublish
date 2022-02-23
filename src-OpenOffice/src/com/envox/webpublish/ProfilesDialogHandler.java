@@ -42,16 +42,19 @@ public class ProfilesDialogHandler {
         m_mouseListener = mouseListener;
     }
 
-    private void addProfileToList(Profile profile) {
+    private void insertProfileToList(Profile profile, short pos) {
         String profileName = profile.getProfileName();
         String profileType = profile.getTypeName();
         if (profileName.compareTo(profileType) == 0) {
-            m_controlContainer.getListBox("lbProfiles").addItem(profileName, (short)m_profiles.size());
+            m_controlContainer.getListBox("lbProfiles").addItem(profileName, pos);
         } else {
-            m_controlContainer.getListBox("lbProfiles").addItem(profileName + " (" + profileType + ")", (short)m_profiles.size());
+            m_controlContainer.getListBox("lbProfiles").addItem(profileName + " (" + profileType + ")", pos);
         }
     }
 
+    private void addProfileToList(Profile profile) {
+        insertProfileToList(profile, (short)m_profiles.size());
+    }
     public void initControls() {
         m_controlContainer.getListBox("lbProfiles").addItemListener(m_itemListener);
         m_controlContainer.getWindow("lbProfiles").addMouseListener(m_mouseListener);
@@ -167,7 +170,7 @@ public class ProfilesDialogHandler {
             try {
                 if (dlg.show()) {
                     m_controlContainer.getListBox("lbProfiles").removeItems(pos, (short)1);
-                    m_controlContainer.getListBox("lbProfiles").addItem(profile.getProfileName(), pos);
+                    insertProfileToList(profile, pos);
                     m_controlContainer.getListBox("lbProfiles").selectItemPos(pos, true);
                 }
             } catch (Exception ex) {

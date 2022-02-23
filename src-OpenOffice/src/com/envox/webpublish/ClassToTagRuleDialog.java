@@ -56,7 +56,7 @@ public class ClassToTagRuleDialog
         if (arg0.ActionCommand.equals("OK")) {
             String className = m_controlContainer.getTextComponent("txtClass").getText();
             if (StringUtils.isBlank(className)) {
-                Util.showMessageBox("WebPublish", "Enter class name.");
+                Util.showMessageBox("WebPublish", "Enter style name.");
                 m_controlContainer.getWindow("txtClass").setFocus();
                 return;
             }

@@ -139,8 +139,8 @@ public class MoveableTypeAPIClient {
     }
 
     public void publish(PostProperties postProperties, String description) throws XmlRpcException {
-        if (postProperties.getPostType() == "page") {
-            wpPublish(postProperties, description);
+        if (postProperties.isPage()) {
+            pagePublish(postProperties, description);
             return;
         }
 
@@ -187,17 +187,16 @@ public class MoveableTypeAPIClient {
                 m_blogID,
                 m_userName,
                 m_password,
-                content,
-                postProperties.getPublishOption() == 0 ? Boolean.FALSE : Boolean.TRUE
+                content
             });
             postProperties.setPostId((String)result);
         } else {
             m_client.execute("wp.editPost", new Object[]{
-                postProperties.getPostId(),
+                m_blogID,
                 m_userName,
                 m_password,
-                content,
-                postProperties.getPublishOption() == 0 ? Boolean.FALSE : Boolean.TRUE
+                postProperties.getPostId(),
+                content
             });
         }
 
@@ -215,7 +214,7 @@ public class MoveableTypeAPIClient {
         });
     }
 
-    public void wpPublish(PostProperties postProperties, String description) throws XmlRpcException {
+    public void pagePublish(PostProperties postProperties, String description) throws XmlRpcException {
         HashMap content = new HashMap();
 
         content.put("title", postProperties.getTitle());

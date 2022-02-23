@@ -7,7 +7,7 @@
   <dlg:button dlg:id="btnAdd" dlg:tab-index="1" dlg:left="133" dlg:top="21" dlg:width="50" dlg:height="14" dlg:help-text="&amp;610.HTMLOptions.btnAdd.HelpText" dlg:value="&amp;611.HTMLOptions.btnAdd.Label"/>
   <dlg:button dlg:id="btnEdit" dlg:tab-index="2" dlg:left="133" dlg:top="39" dlg:width="50" dlg:height="14" dlg:help-text="&amp;612.HTMLOptions.btnEdit.HelpText" dlg:value="&amp;613.HTMLOptions.btnEdit.Label"/>
   <dlg:button dlg:id="btnDelete" dlg:tab-index="3" dlg:left="133" dlg:top="57" dlg:width="50" dlg:height="14" dlg:help-text="&amp;614.HTMLOptions.btnDelete.HelpText" dlg:value="&amp;615.HTMLOptions.btnDelete.Label"/>
-  <dlg:text dlg:id="lblClassToTag" dlg:tab-index="4" dlg:left="7" dlg:top="9" dlg:width="117" dlg:height="8" dlg:help-text="&amp;620.HTMLOptions.lblClassToTag.HelpText" dlg:value="&amp;621.HTMLOptions.lblClassToTag.Label"/>
+  <dlg:text dlg:id="lblClassToTag" dlg:tab-index="4" dlg:left="7" dlg:top="9" dlg:width="175" dlg:height="8" dlg:help-text="&amp;620.HTMLOptions.lblClassToTag.HelpText" dlg:value="&amp;621.HTMLOptions.lblClassToTag.Label"/>
   <dlg:menulist dlg:id="lbClassToTagRules" dlg:tab-index="0" dlg:left="7" dlg:top="21" dlg:width="121" dlg:height="101" dlg:help-text="&amp;650.HTMLOptions.lbClassToTagRules.HelpText"/>
  </dlg:bulletinboard>
 </dlg:window>
