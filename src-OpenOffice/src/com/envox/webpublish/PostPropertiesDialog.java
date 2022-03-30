@@ -89,7 +89,7 @@ public class PostPropertiesDialog
 
         m_lbPostType = m_controlContainer.getListBox("lbPostType");
         m_lbPostType.addItemListener(this);
-        String[] postTypes = {"post", "page", "docs"};
+        String[] postTypes = {"page", "post", "docs", "knowledgebase"};
         addItems(postTypes, m_lbPostType);
 
         m_lbPrimaryCategory = m_controlContainer.getListBox("lbPrimaryCategory");

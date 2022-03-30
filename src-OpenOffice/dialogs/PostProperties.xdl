@@ -30,7 +30,7 @@
   <dlg:text dlg:id="Label4" dlg:tab-index="24" dlg:left="6" dlg:top="9" dlg:width="24" dlg:height="8" dlg:help-text="&amp;224.PostProperties.Label4.HelpText" dlg:value="&amp;225.PostProperties.Label4.Label"/>
   <dlg:textfield dlg:id="txtPublishProfile" dlg:tab-index="25" dlg:disabled="true" dlg:left="33" dlg:top="6" dlg:width="109" dlg:height="14" dlg:help-text="&amp;226.PostProperties.txtPublishProfile.HelpText" dlg:tabstop="false" dlg:readonly="true" dlg:value="&amp;227.PostProperties.txtPublishProfile.Text"/>
   <dlg:text dlg:id="lblPrimaryCategory" dlg:tab-index="18" dlg:left="6" dlg:top="73" dlg:width="200" dlg:height="8" dlg:help-text="&amp;230.PostProperties.lblPrimaryCategory.HelpText" dlg:value="&amp;231.PostProperties.lblPrimaryCategory.Label"/>
-  <dlg:menulist dlg:id="lbPostType" dlg:tab-index="26" dlg:left="43" dlg:top="51" dlg:width="161" dlg:height="14" dlg:help-text="&amp;574.PostProperties.lbPostType.HelpText" dlg:spin="true"/>
-  <dlg:text dlg:id="lblPostType" dlg:tab-index="27" dlg:left="7" dlg:top="53" dlg:width="32" dlg:height="12" dlg:help-text="&amp;577.PostProperties.lblPostType.HelpText" dlg:value="&amp;578.PostProperties.lblPostType.Label"/>
+  <dlg:menulist dlg:id="lbPostType" dlg:tab-index="26" dlg:left="43" dlg:top="51" dlg:width="161" dlg:height="14" dlg:help-text="&amp;574.PostProperties.lbPostType.HelpText" dlg:spin="true" dlg:linecount="12"/>
+  <dlg:text dlg:id="lblPostType" dlg:tab-index="27" dlg:left="7" dlg:top="54" dlg:width="32" dlg:height="8" dlg:help-text="&amp;577.PostProperties.lblPostType.HelpText" dlg:value="&amp;578.PostProperties.lblPostType.Label"/>
  </dlg:bulletinboard>
 </dlg:window>
